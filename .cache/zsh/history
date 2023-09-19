@@ -139,3 +139,7 @@ hx home-manager/programs/waybar/waybar.nix
 hx --tutor
 exit
 : 1695151034:0;git add .
+: 1695151050:0;git cm -m "Moved Waybar config to Nix\!"
+: 1695151054:0;git pu origin main
+: 1695151102:0;hx README.md
+: 1695151137:0;git add .
