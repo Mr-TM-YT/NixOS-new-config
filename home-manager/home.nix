@@ -32,7 +32,6 @@
     };
   };
 
-  # TODO: Set your username
   home = {
     username = "mohamed";
     homeDirectory = "/home/mohamed";
@@ -41,9 +40,10 @@
   home.packages = with pkgs; [ neofetch ];
   
   home.sessionVariables = {
-    EDITOR = "nvim";
+    EDITOR = "helix";
     BROWSER = "firefox";
     TERMINAL = "kitty";
+    XDG_PICTURES_DIR = "~/Pictures/";
   };
 
   home.shellAliases = {

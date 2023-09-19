@@ -116,3 +116,12 @@ exit
 : 1695056176:0;sudo rm -r .git
 : 1695056208:0;git init
 : 1695056210:0;git add .
+: 1695056225:0;git cm -m "Initial commit"
+: 1695056233:0;git branch -M main
+: 1695056241:0;\
+git remote add origin git@github.com:Mr-TM-YT/NixOS-new-config.git
+: 1695056247:0;git push -u origin main
+: 1695068557:0;hx --health
+: 1695068608:0;cd ../Projects/Web/BunTest
+: 1695145657:0;hx home-manager/home.nix
+: 1695145667:0;git add .
