@@ -1,5 +1,5 @@
 { pkgs, config, input, ... }: {
-  
+
   qt = {
     enable = true;
     platformTheme = "gnome";

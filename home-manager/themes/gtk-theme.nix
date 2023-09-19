@@ -15,7 +15,7 @@
       package = pkgs.tokyo-night-gtk;
     };
     gtk3.extraConfig = {
-      gtk-application-prefer-dark-theme=1;
+      gtk-application-prefer-dark-theme = 1;
       gtk-xft-antialias = 1;
       gtk-xft-hinting = 1;
       gtk-xft-hintstyle = "hintfull";

@@ -1,7 +1,7 @@
 # This is your home-manager configuration file
 # Use this to configure your home environment (it replaces ~/.config/nixpkgs/home.nix)
 
-{ inputs, outputs, lib, config, pkgs, nix-doom-emacs, ... }: {
+{ inputs, outputs, lib, config, pkgs, ... }: {
   # You can import other home-manager modules here
   imports = [
     ./programs
@@ -38,9 +38,9 @@
   };
 
   home.packages = with pkgs; [ neofetch ];
-  
+
   home.sessionVariables = {
-    EDITOR = "helix";
+    EDITOR = "hx";
     BROWSER = "firefox";
     TERMINAL = "kitty";
     XDG_PICTURES_DIR = "~/Pictures/";
@@ -57,7 +57,7 @@
     root-switch = "sudo nixos-rebuild switch --flake ~/system#mohamed-pc";
   };
 
-# Enable home-manager and git
+  # Enable home-manager and git
   programs = {
     home-manager.enable = true;
 
@@ -72,7 +72,7 @@
         background_opacity = "0.9";
       };
     };
-    
+
     btop = {
       settings = {
         color_theme = "tokyo-storm";
@@ -95,21 +95,21 @@
         "osd-font-size" = "14";
         "osd-bar-align-y" = "0.95";
         "osd-on-seek" = "msg-bar";
-   			"osd-bold" = "no";
-   			"osd-border-size" = "0";
-   			"osd-back-color" = "#4f1b1d1e";
-   			"osd-color" = "#ffffff";
-   			"osd-duration" = "3000";
-   			"osd-level" = "3";
- 		};
-	bindings = {
-		"j" = "seek 5";
-		"h" = "seek -5";
-		"Ctrl+j" = "seek 30";
-		"Ctrl+h" = "seek -30";
-	};
-};
-};
+        "osd-bold" = "no";
+        "osd-border-size" = "0";
+        "osd-back-color" = "#4f1b1d1e";
+        "osd-color" = "#ffffff";
+        "osd-duration" = "3000";
+        "osd-level" = "3";
+      };
+      bindings = {
+        "j" = "seek 5";
+        "h" = "seek -5";
+        "Ctrl+j" = "seek 30";
+        "Ctrl+h" = "seek -30";
+      };
+    };
+  };
 
   # Nicely reload system units when changing configs
   systemd.user.startServices = "sd-switch";

@@ -1,244 +1,263 @@
-{ config, lib, pkgs, ... }:
-
-{
-    programs.waybar = {
-      enable = true;
-      package = pkgs.waybar;
-      systemd = {
-        enable = false;
-        target = "graphical-session.target";
-      };
-      # style = ''
-      #          * {
-      #            font-family: "JetBrainsMono Nerd Font";
-      #            font-size: 12pt;
-      #            font-weight: bold;
-      #            border-radius: 8px;
-      #            transition-property: background-color;
-      #            transition-duration: 0.5s;
-      #          }
-      #          @keyframes blink_red {
-      #            to {
-      #              background-color: rgb(242, 143, 173);
-      #              color: rgb(26, 24, 38);
-      #            }
-      #          }
-      #          .warning, .critical, .urgent {
-      #            animation-name: blink_red;
-      #            animation-duration: 1s;
-      #            animation-timing-function: linear;
-      #            animation-iteration-count: infinite;
-      #            animation-direction: alternate;
-      #          }
-      #          window#waybar {
-      #            background-color: transparent;
-      #          }
-      #          window > box {
-      #            margin-left: 5px;
-      #            margin-right: 5px;
-      #            margin-top: 5px;
-      #            background-color: #1e1e2a;
-      #            padding: 3px;
-      #            padding-left:8px;
-      #            border: 2px none #33ccff;
-      #          }
-      #    #workspaces {
-      #            padding-left: 0px;
-      #            padding-right: 4px;
-      #          }
-      #    #workspaces button {
-      #            padding-top: 5px;
-      #            padding-bottom: 5px;
-      #            padding-left: 6px;
-      #            padding-right: 6px;
-      #          }
-      #    #workspaces button.active {
-      #            background-color: rgb(181, 232, 224);
-      #            color: rgb(26, 24, 38);
-      #          }
-      #    #workspaces button.urgent {
-      #            color: rgb(26, 24, 38);
-      #          }
-      #    #workspaces button:hover {
-      #            background-color: rgb(248, 189, 150);
-      #            color: rgb(26, 24, 38);
-      #          }
-      #          tooltip {
-      #            background: rgb(48, 45, 65);
-      #          }
-      #          tooltip label {
-      #            color: rgb(217, 224, 238);
-      #          }
-      #    #custom-launcher {
-      #            font-size: 20px;
-      #            padding-left: 8px;
-      #            padding-right: 6px;
-      #            color: #7ebae4;
-      #          }
-      #    #mode, #clock, #memory, #temperature,#cpu,#mpd, #custom-wall, #temperature, #backlight, #pulseaudio, #network, #battery, #custom-powermenu, #custom-cava-internal {
-      #            padding-left: 10px;
-      #            padding-right: 10px;
-      #          }
-      #          /* #mode { */
-      #          /* 	margin-left: 10px; */
-      #          /* 	background-color: rgb(248, 189, 150); */
-      #          /*     color: rgb(26, 24, 38); */
-      #          /* } */
-      #    #memory {
-      #            color: rgb(181, 232, 224);
-      #          }
-      #    #cpu {
-      #            color: rgb(245, 194, 231);
-      #          }
-      #    #clock {
-      #            color: rgb(217, 224, 238);
-      #          }
-      #   /* #idle_inhibitor {
-      #            color: rgb(221, 182, 242);
-      #          }*/
-      #    #custom-wall {
-      #            color: #33ccff;
-      #       }
-      #    #temperature {
-      #            color: rgb(150, 205, 251);
-      #          }
-      #    #backlight {
-      #            color: rgb(248, 189, 150);
-      #          }
-      #    #pulseaudio {
-      #            color: rgb(245, 224, 220);
-      #          }
-      #    #network {
-      #            color: #ABE9B3;
-      #          }
-      #    #network.disconnected {
-      #            color: rgb(255, 255, 255);
-      #          }
-      #    #custom-powermenu {
-      #            color: rgb(242, 143, 173);
-      #            padding-right: 8px;
-      #          }
-      #    #tray {
-      #            padding-right: 8px;
-      #            padding-left: 10px;
-      #          }
-      #    #mpd.paused {
-      #            color: #414868;
-      #            font-style: italic;
-      #          }
-      #    #mpd.stopped {
-      #            background: transparent;
-      #          }
-      #    #mpd {
-      #            color: #c0caf5;
-      #          }
-      #    #custom-cava-internal{
-      #            font-family: "Hack Nerd Font" ;
-      #            color: #33ccff;
-      #          }
-      # '';
-      # settings = [{
-      #   "layer" = "top";
-      #   "position" = "top";
-      #   modules-left = [
-      #     "temperature"
-      #     "mpd"
-      #     "custom/cava-internal"
-      #     "hyprland/workspaces"
-      #   ];
-      #   modules-center = [
-      #     "clock"
-      #   ];
-      #   modules-right = [
-      #     "pulseaudio"
-      #     "backlight"
-      #     "memory"
-      #     "cpu"
-      #     "network"
-      #     "custom/powermenu"
-      #     "tray"
-      #   ];
-      #   "hyprland/workspaces" = {
-      #     "disable-scroll" = true;
-      #     "all-outputs" = true;
-      #     "on-click" = "activate";
-      #     "persistent_workspaces" = {
-      #         "1" = [];
-      #         "2" = [];
-      #         "3" = [];
-      #         "4" = [];
-      #         "5" = [];
-      #         "6" = [];
-      #         "7" = [];
-      #         "8" = [];
-      #         "9" = [];
-      #         "10"=  [];
-      #     };
-      # };
-      #   "custom/launcher" = {
-      #     "format" = " ";
-      #     "on-click" = "pkill rofi || rofi2";
-      #     "on-click-middle" = "exec default_wall";
-      #     "on-click-right" = "exec wallpaper_random";
-      #     "tooltip" = false;
-      #   };
-      #   "custom/cava-internal" = {
-      #     "exec" = "sleep 1s && cava-internal";
-      #     "tooltip" = false;
-      #   };
-      #   "pulseaudio" = {
-      #     "scroll-step" = 1;
-      #     "format" = "{icon} {volume}%";
-      #     "format-muted" = "󰖁 Muted";
-      #     "format-icons" = {
-      #       "default" = [ "" "" "" ];
-      #     };
-      #     "on-click" = "pamixer -t";
-      #     "tooltip" = false;
-      #   };
-      #   "clock" = {
-      #     "interval" = 1;
-      #     "format" = "{:%I:%M %p  %A %b %d}";
-      #     "tooltip" = true;
-      #     "tooltip-format"= "{=%A; %d %B %Y}\n<tt>{calendar}</tt>";
-      #   };
-      #   "memory" = {
-      #     "interval" = 1;
-      #     "format" = "󰻠 {percentage}%";
-      #     "states" = {
-      #       "warning" = 85;
-      #     };
-      #   };
-      #   "cpu" = {
-      #     "interval" = 1;
-      #     "format" = "󰍛 {usage}%";
-      #   };
-      #   "mpd" = {
-      #     "max-length" = 25;
-      #     "format" = "<span foreground='#bb9af7'></span> {title}";
-      #     "format-paused" = " {title}";
-      #     "format-stopped" = "<span foreground='#bb9af7'></span>";
-      #     "format-disconnected" = "";
-      #     "on-click" = "mpc --quiet toggle";
-      #     "on-click-right" = "mpc update; mpc ls | mpc add";
-      #     "on-click-middle" = "kitty --class='ncmpcpp' ncmpcpp ";
-      #     "on-scroll-up" = "mpc --quiet prev";
-      #     "on-scroll-down" = "mpc --quiet next";
-      #     "smooth-scrolling-threshold" = 5;
-      #     "tooltip-format" = "{title} - {artist} ({elapsedTime:%M:%S}/{totalTime:%H:%M:%S})";
-      #   };
-      #   "network" = {
-      #     "format-disconnected" = "󰯡 Disconnected";
-      #     "format-ethernet" = "󰒢 Connected!";
-      #     "format-linked" = "󰖪 {essid} (No IP)";
-      #     "format-wifi" = "󰖩 {essid}";
-      #     "interval" = 1;
-      #     "tooltip" = false;
-      #   };
-      #   "tray" = {
-      #     "icon-size" = 15;
-      #     "spacing" = 5;
-      #   };
-      # }];
+{ config, lib, pkgs, ... }: {
+  programs.waybar = {
+    enable = true;
+    package = pkgs.waybar;
+    systemd = {
+      enable = false;
+      target = "graphical-session.target";
     };
+    settings = [{
+      "layer" = "top";
+      "position" = "top";
+      "mod" = "dock";
+      "exclusive" = true;
+      "gtk-layer-shell" = true;
+      "passthrough" = false;
+      "height" = 0;
+      modules-left = [
+        "clock"
+        "hyprland/workspaces"
+      ];
+      modules-center = [ "hyprland/window" ];
+      modules-right = [
+        "tray"
+        "custom/language"
+        "pulseaudio"
+        "pulseaudio#microphone"
+      ];
+      "hyprland/window" = {
+        "format" = "{}";
+      };
+      "hyprland/workspaces" = {
+        "disable-scroll" = true;
+        "all-outputs" = true;
+        "on-click" = "activate";
+        #"format" = "{icon}";
+        "persistent_workspaces" = {
+          "1" = [ ];
+          "2" = [ ];
+          "3" = [ ];
+          "4" = [ ];
+          "5" = [ ];
+          "6" = [ ];
+          "7" = [ ];
+          "8" = [ ];
+          "9" = [ ];
+          "10" = [ ];
+        };
+      };
+      "custom/updates" = {
+        "format" = " {}";
+        "interval" = 7200; # every two hours
+        "exec" = "i=$(checkupdates); echo \"$i\" |wc -l; echo \"$i\" |column -t |tr '\n' '\r'"; # # of updates and tooltip details
+        "exec-if" = "exit 0"; # always run; consider advanced run conditions
+        "on-click" = "kitty -e sudo pacman -Syu"; # update system
+        "signal" = 8;
+      };
+      "tray" = {
+        "icon-size" = 13;
+        "spacing" = 10;
+      };
+      "clock" = {
+        "format" = "{: %R   %d/%m}";
+        "tooltip-format" = "<big>{ :%Y %B}</big>\n<tt><small>{calendar}</small></tt>";
+      };
+      "backlight" = {
+        "device" = "intel_backlight";
+        "format" = "{icon} {percent}%";
+        "format-icons" = [ "" "" "" ];
+        "on-scroll-up" = "brightnessctl set 1%+";
+        "on-scroll-down" = "brightnessctl set 1%-";
+        "min-length" = 6;
+      };
+      "battery" = {
+        "states" = {
+          "good" = 95;
+          "warning" = 30;
+          "critical" = 20;
+        };
+        "format" = "{icon} {capacity}%";
+        "format-charging" = " {capacity}%";
+        "format-plugged" = " {capacity}%";
+        "format-alt" = "{time} {icon}";
+        "format-icons" = [ "" "" "" "" "" "" "" "" "" "" "" ];
+      };
+      "pulseaudio" = {
+        "format" = "{icon} {volume}%";
+        "tooltip" = false;
+        "format-muted" = " Muted";
+        "on-click" = "pamixer -t";
+        "on-scroll-up" = "pamixer -i 5";
+        "on-scroll-down" = "pamixer -d 5";
+        "scroll-step" = 5;
+        "format-icons" = {
+          "headphone" = "";
+          "hands-free" = "";
+          "headset" = "";
+          "phone" = "";
+          "portable" = "";
+          "car" = "";
+          "default" = [ "" "" "" ];
+        };
+      };
+      "pulseaudio#microphone" = {
+        "format" = "{format_source}";
+        "format-source" = " {volume}%";
+        "format-source-muted" = " Muted";
+        "on-click" = "pamixer --default-source -t";
+        "on-scroll-up" = "pamixer --default-source -i 5";
+        "on-scroll-down" = "pamixer --default-source -d 5";
+        "scroll-step" = 5;
+      };
+    }];
+    style = ''
+            * {
+          border: none;
+          border-radius: 0;
+          font-family: Cartograph CF Nerd Font, monospace;
+          font-weight: bold;
+          font-size: 14px;
+          min-height: 0;
+      }
+
+      window#waybar {
+          background: rgba(21, 18, 27, 0);
+          color: #cdd6f4;
+      }
+
+      tooltip {
+          background: #1e1e2e;
+          border-radius: 10px;
+          border-width: 2px;
+          border-style: solid;
+          border-color: #11111b;
+      }
+
+      #workspaces button {
+          padding: 5px;
+          color: #313244;
+          margin-right: 5px;
+      }
+
+      #workspaces button.active {
+          color: #a6adc8;
+      }
+
+      #workspaces button.focused {
+          color: #a6adc8;
+          background: #eba0ac;
+          border-radius: 10px;
+      }
+
+      #workspaces button.urgent {
+          color: #11111b;
+          background: #a6e3a1;
+          border-radius: 10px;
+      }
+
+      #workspaces button:hover {
+          background: #11111b;
+          color: #cdd6f4;
+          border-radius: 10px;
+      }
+
+      #custom-language,
+      #custom-updates,
+      #custom-caffeine,
+      #custom-weather,
+      #window,
+      #clock,
+      #battery,
+      #pulseaudio,
+      #network,
+      #workspaces,
+      #tray,
+      #backlight {
+          background: #1e1e2e;
+          padding: 0px 10px;
+          margin: 3px 0px;
+          margin-top: 10px;
+          border: 1px solid #181825;
+      }
+
+      #tray {
+          border-radius: 10px;
+          margin-right: 10px;
+      }
+
+      #workspaces {
+          background: #1e1e2e;
+          border-radius: 10px;
+          margin-left: 10px;
+          padding-right: 0px;
+          padding-left: 5px;
+      }
+
+      #custom-caffeine {
+          color: #89dceb;
+          border-radius: 10px 0px 0px 10px;
+          border-right: 0px;
+          margin-left: 10px;
+      }
+
+      #custom-language {
+          color: #f38ba8;
+          border-left: 0px;
+          border-right: 0px;
+      }
+
+      #custom-updates {
+          color: #f5c2e7;
+          border-radius: 10px 0px 0px 10px;
+          border-left: 0px;
+          border-right: 0px;
+      }
+
+      #window {
+          border-radius: 10px;
+          margin-left: 60px;
+          margin-right: 60px;
+      }
+
+      #clock {
+          color: #fab387;
+          border-radius: 10px 0px 0px 10px;
+          margin-left: 5px;
+          border-right: 0px;
+      }
+
+      #network {
+          color: #f9e2af;
+          border-left: 0px;
+          border-right: 0px;
+      }
+
+      #pulseaudio {
+          color: #89b4fa;
+          border-left: 0px;
+          border-right: 0px;
+      }
+
+      #pulseaudio.microphone {
+          color: #cba6f7;
+          border-radius: 0px 10px 10px 0px;
+          border-left: 0px;
+          border-right: 0px;
+          margin-right: 5px;
+      }
+
+      #battery {
+          color: #a6e3a1;
+          border-radius: 0 10px 10px 0;
+          margin-right: 10px;
+          border-left: 0px;
+      }
+
+      #custom-weather {
+          border-radius: 0px 10px 10px 0px;
+          border-right: 0px;
+          margin-left: 0px;
+      }
+    '';
+  };
 }

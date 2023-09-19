@@ -18,6 +18,7 @@
     luajit
     nix-prefetch-git
     nil #lsp
+    nixpkgs-fmt
     dconf
     gvfs
     zip

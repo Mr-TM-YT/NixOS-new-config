@@ -18,12 +18,12 @@
     hyprland.inputs.nixpkgs.follows = "nixpkgs";
 
     # Waybar For Hyprland
-    waybar-hyprland.url = "github:hyprwm/hyprland";
+    # waybar-hyprland.url = "github:hyprwm/hyprland";
 
     # Firefox extensions
     firefox-addons = {
-	    url = "gitlab:rycee/nur-expressions?dir=pkgs/firefox-addons";
-	    inputs.nixpkgs.follows = "nixpkgs";
+      url = "gitlab:rycee/nur-expressions?dir=pkgs/firefox-addons";
+      inputs.nixpkgs.follows = "nixpkgs";
     };
   };
 

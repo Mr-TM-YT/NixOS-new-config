@@ -25,7 +25,7 @@
       outputs.overlays.additions
       outputs.overlays.modifications
       outputs.overlays.unstable-packages
-      
+
       # Or define it inline, for example:
       # (final: prev: {
       #   hi = final.hello.overrideAttrs (oldAttrs: {
@@ -57,7 +57,7 @@
     };
   };
 
-  networking.networkmanager.enable = true;  # Easiest to use and most distros use this by default.
+  networking.networkmanager.enable = true; # Easiest to use and most distros use this by default.
   networking.hostName = "mohamed-pc";
 
   # Set your time zone.
@@ -87,7 +87,7 @@
     pulse.enable = true;
     jack.enable = true;
   };
-  
+
   # Enable Wayland.
   services.xserver = {
     enable = true;
@@ -100,14 +100,14 @@
       settings.Theme.CursorTheme = "Bibata-Modern-Classic";
     };
   };
-  
+
   hardware = {
     opengl.enable = true;
     pulseaudio.enable = false;
   };
 
   environment.pathsToLink = [ "/share/zsh" ];
-  environment.shells = with pkgs; [zsh];
+  environment.shells = with pkgs; [ zsh ];
 
   environment.sessionVariables = {
     WLR_NO_HARDWARE_CURSORS = "1";
@@ -138,7 +138,7 @@
 
   xdg.portal = {
     enable = true;
-    extraPortals = [pkgs.xdg-desktop-portal-hyprland];
+    extraPortals = [ pkgs.xdg-desktop-portal-hyprland ];
   };
 
   users.defaultUserShell = pkgs.zsh;
@@ -153,19 +153,19 @@
     };
   };
 
-# Gnome keyring
+  # Gnome keyring
   services.gnome.gnome-keyring.enable = true;
 
   services.emacs.enable = true;
 
-# udisk mounting
+  # udisk mounting
   services.udisks2 = {
-	  enable = true;
-	  mountOnMedia = true;
+    enable = true;
+    mountOnMedia = true;
   };
-  
+
   virtualisation.waydroid.enable = true;
-  
+
   # https://nixos.wiki/wiki/FAQ/When_do_I_update_stateVersion
   system.stateVersion = "23.05";
 }

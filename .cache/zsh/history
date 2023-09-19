@@ -55,78 +55,87 @@ root-switch
 nix-shell -p lxappearance
 nix-shell -p nwg-look
 exit
-: 1694890374:0;ls
-: 1694890375:0;git init
-: 1694890377:0;ls
-: 1694890379:0;git add .
-: 1694890391:0;git cm -m "Added main files (first commit)"
-: 1694890397:0;git pu origin main
-: 1694890398:0;ls
-: 1694890408:0;rm -r result
-: 1694890408:0;ls
-: 1694890420:0;root-switch
-: 1694891235:0;nvim nixos/configuration.nix
-: 1694891250:0;root-switch
-: 1694891376:0;nvim pkgs/sddm-theme.nix
-: 1694891459:0;root-switch
-: 1694891480:0;nvim pkgs/sddm-theme.nix
-: 1694891488:0;root-switch
-: 1694891522:0;nvim pkgs/grub-theme.nix
-: 1694891546:0;root-switch
-: 1694891749:0;nvim nixos/pkgs.nix
-: 1694891758:0;root-switch
-: 1694891779:0;nvim nixos/pkgs.nix
-: 1694891787:0;git add .
-: 1694891791:0;root-switch
-: 1694892339:0;nvim nixos/configuration.nix
-: 1694892379:0;root-switch
-: 1694892404:0;nvim pkgs/sddm-theme.nix
-: 1694892413:0;root-switch
-: 1694892678:0;nvim nixos/configuration.nix
-: 1694892690:0;root-switch
-: 1694984936:0;git add .
-: 1694984940:0;home-switch
-: 1694984958:0;nvim home-manager/programs/helix.nix
-: 1694984968:0;home-switch
-: 1694984989:0;hx
-: 1694985097:0;hx home-manager/programs/helix.nix
-: 1694985123:0;home-switch
-: 1694985136:0;hx home-manager/programs/helix.nix
-: 1694985393:0;home-switch
-: 1694985409:0;git add .
-: 1694985412:0;hx home-manager/programs/helix.nix
-: 1694985596:0;home-switch
-: 1694985938:0;hx --health
-: 1694986005:0;nix-shell -p nil-lsp
-: 1694986017:0;nix-shell -p nil
-: 1694986041:0;hx nixos/pkgs.nix
-: 1694986054:0;root-switch
-: 1694986144:0;hx nixos/pkgs.nix
-: 1694986163:0;hx nixos/configuration.nix
-: 1695055646:0;ls
-: 1695055660:0;hx README.md
-: 1695055770:0;git add .
-: 1695055779:0;git cm -m "Added README.md"
-: 1695055792:0;git branch -M main
-: 1695055802:0;git remote add origin https://github.com/Mr-TM-YT/NixOS-new-config.git
-: 1695055809:0;git push -u origin main
-: 1695055864:0;ls -al ~/.ssh
-: 1695055953:0;cd ../
-: 1695056172:0;rm -r .git
-: 1695056176:0;sudo rm -r .git
-: 1695056208:0;git init
-: 1695056210:0;git add .
-: 1695056225:0;git cm -m "Initial commit"
-: 1695056233:0;git branch -M main
-: 1695056241:0;\
+ls
+git init
+ls
+git add .
+git cm -m "Added main files (first commit)"
+git pu origin main
+ls
+rm -r result
+ls
+root-switch
+nvim nixos/configuration.nix
+root-switch
+nvim pkgs/sddm-theme.nix
+root-switch
+nvim pkgs/sddm-theme.nix
+root-switch
+nvim pkgs/grub-theme.nix
+root-switch
+nvim nixos/pkgs.nix
+root-switch
+nvim nixos/pkgs.nix
+git add .
+root-switch
+nvim nixos/configuration.nix
+root-switch
+nvim pkgs/sddm-theme.nix
+root-switch
+nvim nixos/configuration.nix
+root-switch
+git add .
+home-switch
+nvim home-manager/programs/helix.nix
+home-switch
+hx
+hx home-manager/programs/helix.nix
+home-switch
+hx home-manager/programs/helix.nix
+home-switch
+git add .
+hx home-manager/programs/helix.nix
+home-switch
+hx --health
+nix-shell -p nil-lsp
+nix-shell -p nil
+hx nixos/pkgs.nix
+root-switch
+hx nixos/pkgs.nix
+hx nixos/configuration.nix
+ls
+hx README.md
+git add .
+git cm -m "Added README.md"
+git branch -M main
+git remote add origin https://github.com/Mr-TM-YT/NixOS-new-config.git
+git push -u origin main
+ls -al ~/.ssh
+cd ../
+rm -r .git
+sudo rm -r .git
+git init
+git add .
+git cm -m "Initial commit"
+git branch -M main
+\
 git remote add origin git@github.com:Mr-TM-YT/NixOS-new-config.git
-: 1695056247:0;git push -u origin main
-: 1695068557:0;hx --health
-: 1695068608:0;cd ../Projects/Web/BunTest
-: 1695145657:0;hx home-manager/home.nix
-: 1695145667:0;git add .
-: 1695145681:0;git cm -m "Added Helix config
-: 1695145689:0;git cm -m "Added Helix config\!"
-: 1695145697:0;git push origin main
-: 1695145968:0;hx README.md
-: 1695145996:0;git add .
+git push -u origin main
+hx --health
+cd ../Projects/Web/BunTest
+hx home-manager/home.nix
+git add .
+git cm -m "Added Helix config
+git cm -m "Added Helix config\!"
+git push origin main
+hx README.md
+git add .
+git cm -m "Updated README.md"
+git pu origin main
+hx flake.nix
+root-switch
+waybar
+hx home-manager/programs/waybar/waybar.nix
+hx --tutor
+exit
+: 1695151034:0;git add .
