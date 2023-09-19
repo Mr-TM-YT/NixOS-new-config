@@ -125,3 +125,8 @@ git remote add origin git@github.com:Mr-TM-YT/NixOS-new-config.git
 : 1695068608:0;cd ../Projects/Web/BunTest
 : 1695145657:0;hx home-manager/home.nix
 : 1695145667:0;git add .
+: 1695145681:0;git cm -m "Added Helix config
+: 1695145689:0;git cm -m "Added Helix config\!"
+: 1695145697:0;git push origin main
+: 1695145968:0;hx README.md
+: 1695145996:0;git add .
