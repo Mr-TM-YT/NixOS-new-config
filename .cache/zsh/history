@@ -213,3 +213,8 @@ exit
 : 1695242011:0;vim .gitignore
 : 1695242015:0;ls
 : 1695242044:0;git add .
+: 1695242046:0;git cm -m "Fixed .gitignore"
+: 1695242049:0;git pu origin main
+: 1695242060:0;git status
+: 1695242100:0;vim .gitignore
+: 1695242107:0;git add .
