@@ -6,6 +6,7 @@
     ./waybar
     ./zsh.nix
     ./helix.nix
+    ./nvim
   ];
 }
 

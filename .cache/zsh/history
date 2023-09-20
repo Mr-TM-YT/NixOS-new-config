@@ -147,3 +147,56 @@ exit
 : 1695151147:0;git cm -m "Fixed README.md"
 : 1695151151:0;git pu origin main
 : 1695228151:0;git add .
+: 1695228165:0;git cm -c "Cleaned waybar.nix"
+: 1695228172:0;git cm -m "Cleaned waybar.nix"
+: 1695228177:0;git pu origin main
+: 1695230163:0;nvim
+: 1695230591:0;mkdir home-manager/programs
+: 1695230595:0;cd home-manager/programs
+: 1695230598:0;mkdir nvim
+: 1695230601:0;cd nvim
+: 1695230607:783;hx nvim.nix
+: 1695231398:44;hx options.lua
+: 1695231455:33;hx plugins/cmp.lua
+: 1695231491:0;ls
+: 1695231499:49;hx plugins/lsp.lua
+: 1695231559:6;hx telescope.lua
+: 1695231585:9;hx plugins/treesitter.lua
+: 1695231665:7;hx plugins/lualine.lua
+: 1695231675:54;hx nvim.nix
+: 1695231731:1;nvim
+: 1695231734:48;home-switch
+: 1695231793:69;hx default.nix
+: 1695231863:1;ls
+: 1695231871:7;hx ../default.nix
+: 1695231882:0;home-switch
+: 1695231890:0;ls
+: 1695231891:0;cd ../
+: 1695231892:0;ls
+: 1695231922:0;cd ../
+: 1695231923:0;git add .
+: 1695231926:0;home-switch
+: 1695231942:0;hx home-manager/programs/nvim/nvim.nix
+: 1695231954:0;home-switch
+: 1695231963:0;hx home-manager/programs/nvim/default.nix
+: 1695231999:0;hx home-manager/programs/defu
+: 1695232003:0;hx home-manager/programs/default.nix
+: 1695232074:0;home-switch
+: 1695232184:0;git status
+: 1695232189:0;git add .
+: 1695232192:0;home-switch
+: 1695232378:0;nvim
+: 1695232405:0;hx ~/.config/nvim/init.lua
+: 1695232440:0;hx home-manager/programs/nvim
+: 1695232932:0;home-switch
+: 1695232943:0;nvim
+: 1695232953:0;hx home-manager/programs/nvim/nvim.nix
+: 1695233032:0;home-switch
+: 1695233043:0;nvim
+: 1695233063:0;hx home-manager/programs/nvim/nvim.nix
+: 1695233195:0;home-switch
+: 1695233205:0;nvim
+: 1695233291:0;cd ../
+: 1695241656:0;git add .
+: 1695241672:0;vim README.md
+: 1695241744:0;git add .
