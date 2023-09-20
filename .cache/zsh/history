@@ -204,3 +204,7 @@ exit
 : 1695241760:0;git pu origin main
 : 1695241837:0;vim .gitignore
 : 1695241844:0;git add .
+: 1695241858:0;git cm -m "Added .gitignore"
+: 1695241862:0;git pu origin main
+: 1695241912:0;vim .gitignore
+: 1695241917:0;git add .
