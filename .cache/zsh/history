@@ -200,3 +200,7 @@ exit
 : 1695241656:0;git add .
 : 1695241672:0;vim README.md
 : 1695241744:0;git add .
+: 1695241756:0;git cm -m "Removed NeoVim config to Home-Manager"
+: 1695241760:0;git pu origin main
+: 1695241837:0;vim .gitignore
+: 1695241844:0;git add .
