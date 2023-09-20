@@ -1,4 +1,4 @@
-{ config, lib, pkgs, ... }: {
+{ pkgs, ... }: {
   programs.waybar = {
     enable = true;
     package = pkgs.waybar;
@@ -46,14 +46,6 @@
           "10" = [ ];
         };
       };
-      "custom/updates" = {
-        "format" = " {}";
-        "interval" = 7200; # every two hours
-        "exec" = "i=$(checkupdates); echo \"$i\" |wc -l; echo \"$i\" |column -t |tr '\n' '\r'"; # # of updates and tooltip details
-        "exec-if" = "exit 0"; # always run; consider advanced run conditions
-        "on-click" = "kitty -e sudo pacman -Syu"; # update system
-        "signal" = 8;
-      };
       "tray" = {
         "icon-size" = 13;
         "spacing" = 10;
@@ -61,26 +53,6 @@
       "clock" = {
         "format" = "{: %R   %d/%m}";
         "tooltip-format" = "<big>{ :%Y %B}</big>\n<tt><small>{calendar}</small></tt>";
-      };
-      "backlight" = {
-        "device" = "intel_backlight";
-        "format" = "{icon} {percent}%";
-        "format-icons" = [ "" "" "" ];
-        "on-scroll-up" = "brightnessctl set 1%+";
-        "on-scroll-down" = "brightnessctl set 1%-";
-        "min-length" = 6;
-      };
-      "battery" = {
-        "states" = {
-          "good" = 95;
-          "warning" = 30;
-          "critical" = 20;
-        };
-        "format" = "{icon} {capacity}%";
-        "format-charging" = " {capacity}%";
-        "format-plugged" = " {capacity}%";
-        "format-alt" = "{time} {icon}";
-        "format-icons" = [ "" "" "" "" "" "" "" "" "" "" "" ];
       };
       "pulseaudio" = {
         "format" = "{icon} {volume}%";
@@ -111,7 +83,7 @@
       };
     }];
     style = ''
-            * {
+          * {
           border: none;
           border-radius: 0;
           font-family: Cartograph CF Nerd Font, monospace;
