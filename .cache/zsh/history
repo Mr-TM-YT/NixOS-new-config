@@ -222,3 +222,8 @@ exit
 : 1695242113:0;git pu origin main
 : 1695242188:0;vim .gitignore
 : 1695242208:0;git add .
+: 1695242212:0;git pu origin main
+: 1695242216:0;git cm -m "Fixed .gitignore"
+: 1695242217:0;git pu origin main
+: 1695242285:0;echo "Fuck it it's not like that someone will hack me using my history, Right?"
+: 1695242293:0;git add .
