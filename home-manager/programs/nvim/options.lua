@@ -1,3 +1,7 @@
+-- To make Nvim-Tree.lua work
+vim.g.loaded_netrw = 1
+vim.g.loaded_netrwPlugin = 1
+
 vim.g.mapleader = ' '
 vim.g.maplocalleader = ' '
 
@@ -8,8 +12,8 @@ vim.o.relativenumber = true
 
 -- vim.o.signcolumn = 'yes'
 
-vim.o.tabstop = 4
-vim.o.shiftwidth = 4
+vim.o.tabstop = 2 
+vim.o.shiftwidth = 2
 
 vim.o.updatetime = 300
 

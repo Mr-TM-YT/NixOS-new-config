@@ -16,7 +16,42 @@
     ];
 
     plugins = with pkgs.vimPlugins; [
+      
+      # File Explorer
+      {
+        plugin = nvim-tree-lua;
+        config = toLuaFile ./plugins/nvim-tree.lua;
+      }
+      {
+        plugin = which-key-nvim;
+        config = toLua "require('which-key').setup()";
+      }      
+      {
+        plugin = gitsigns-nvim;
+        config = toLua "require('gitsigns').setup()";
+      }
 
+      {
+        plugin = dashboard-nvim;
+        config = toLua "require('dashboard').setup()";
+      }
+
+      # Terminal Emulator
+      {
+        plugin = nvterm;
+        config = toLuaFile ./plugins/nvterm.lua;
+      }
+      
+      # For adding intdentation guides
+      # {
+      #   plugin = indent-blankline-nvim;
+      #   config = toLua "require('indent_blankline').setup({})";
+      # }
+      
+
+      # Auto Pairs
+      auto-pairs
+      
       {
         plugin = nvim-lspconfig;
         config = toLuaFile ./plugins/lsp.lua;
@@ -70,6 +105,7 @@
           p.tree-sitter-html
           p.tree-sitter-css
           p.tree-sitter-json
+          p.tree-sitter-markdown
         ]));
         config = toLuaFile ./plugins/treesitter.lua;
       }

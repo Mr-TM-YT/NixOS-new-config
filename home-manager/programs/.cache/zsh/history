@@ -1,0 +1,33 @@
+ls
+exit
+ls
+hx nvim/nvim.nix
+home-switch
+nvim
+hx nvim/nvim.nix
+home-switch
+nvim
+nvim nvim/nvim.nix
+home-switch
+nvim
+nvim nvim/options.lua
+home-switch
+ls nvim/plugins
+nvim nvim/options.lua
+nvim nvim/nvim.nix
+git add .
+home-switch
+nvim
+nvim nvim/plugins/nvterm.lua
+home-switch
+nvim
+eix
+exit
+: 1695249842:0;nvim nvim/plugins/nvim-tree.lua
+: 1695249968:0;git add .
+: 1695249971:0;nvim nvim/nvim.nix
+: 1695249997:0;home-switch
+: 1695250009:0;nvim
+: 1695250024:0;nvim nvim/plugins/nvim-tree.lua
+: 1695250057:0;home-switch
+: 1695250225:0;nvim

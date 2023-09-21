@@ -8,7 +8,7 @@
     git
     firefox
     fzf
-    pamixer
+    pulseaudio
     kitty
     emacs29-pgtk
     neovim
@@ -18,10 +18,9 @@
     luajit
     nix-prefetch-git
     nil #lsp
-    nixpkgs-fmt
-    dconf
     gvfs
     zip
+    polkit_gnome
     unzip
     gparted
     helix

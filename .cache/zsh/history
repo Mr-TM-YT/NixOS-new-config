@@ -138,92 +138,102 @@ waybar
 hx home-manager/programs/waybar/waybar.nix
 hx --tutor
 exit
-: 1695151034:0;git add .
-: 1695151050:0;git cm -m "Moved Waybar config to Nix\!"
-: 1695151054:0;git pu origin main
-: 1695151102:0;hx README.md
-: 1695151137:0;git add .
-: 1695151145:0;git cm -m "Fixed README.md
-: 1695151147:0;git cm -m "Fixed README.md"
-: 1695151151:0;git pu origin main
-: 1695228151:0;git add .
-: 1695228165:0;git cm -c "Cleaned waybar.nix"
-: 1695228172:0;git cm -m "Cleaned waybar.nix"
-: 1695228177:0;git pu origin main
-: 1695230163:0;nvim
-: 1695230591:0;mkdir home-manager/programs
-: 1695230595:0;cd home-manager/programs
-: 1695230598:0;mkdir nvim
-: 1695230601:0;cd nvim
-: 1695230607:783;hx nvim.nix
-: 1695231398:44;hx options.lua
-: 1695231455:33;hx plugins/cmp.lua
-: 1695231491:0;ls
-: 1695231499:49;hx plugins/lsp.lua
-: 1695231559:6;hx telescope.lua
-: 1695231585:9;hx plugins/treesitter.lua
-: 1695231665:7;hx plugins/lualine.lua
-: 1695231675:54;hx nvim.nix
-: 1695231731:1;nvim
-: 1695231734:48;home-switch
-: 1695231793:69;hx default.nix
-: 1695231863:1;ls
-: 1695231871:7;hx ../default.nix
-: 1695231882:0;home-switch
-: 1695231890:0;ls
-: 1695231891:0;cd ../
-: 1695231892:0;ls
-: 1695231922:0;cd ../
-: 1695231923:0;git add .
-: 1695231926:0;home-switch
-: 1695231942:0;hx home-manager/programs/nvim/nvim.nix
-: 1695231954:0;home-switch
-: 1695231963:0;hx home-manager/programs/nvim/default.nix
-: 1695231999:0;hx home-manager/programs/defu
-: 1695232003:0;hx home-manager/programs/default.nix
-: 1695232074:0;home-switch
-: 1695232184:0;git status
-: 1695232189:0;git add .
-: 1695232192:0;home-switch
-: 1695232378:0;nvim
-: 1695232405:0;hx ~/.config/nvim/init.lua
-: 1695232440:0;hx home-manager/programs/nvim
-: 1695232932:0;home-switch
-: 1695232943:0;nvim
-: 1695232953:0;hx home-manager/programs/nvim/nvim.nix
-: 1695233032:0;home-switch
-: 1695233043:0;nvim
-: 1695233063:0;hx home-manager/programs/nvim/nvim.nix
-: 1695233195:0;home-switch
-: 1695233205:0;nvim
-: 1695233291:0;cd ../
-: 1695241656:0;git add .
-: 1695241672:0;vim README.md
-: 1695241744:0;git add .
-: 1695241756:0;git cm -m "Removed NeoVim config to Home-Manager"
-: 1695241760:0;git pu origin main
-: 1695241837:0;vim .gitignore
-: 1695241844:0;git add .
-: 1695241858:0;git cm -m "Added .gitignore"
-: 1695241862:0;git pu origin main
-: 1695241912:0;vim .gitignore
-: 1695241917:0;git add .
-: 1695241925:0;git cm -m "Fixed .gitignore"
-: 1695241931:0;git pu origin main
-: 1695242011:0;vim .gitignore
-: 1695242015:0;ls
-: 1695242044:0;git add .
-: 1695242046:0;git cm -m "Fixed .gitignore"
-: 1695242049:0;git pu origin main
-: 1695242060:0;git status
-: 1695242100:0;vim .gitignore
-: 1695242107:0;git add .
-: 1695242109:0;git cm -m "Fixed .gitignore"
-: 1695242113:0;git pu origin main
-: 1695242188:0;vim .gitignore
-: 1695242208:0;git add .
-: 1695242212:0;git pu origin main
-: 1695242216:0;git cm -m "Fixed .gitignore"
-: 1695242217:0;git pu origin main
-: 1695242285:0;echo "Fuck it it's not like that someone will hack me using my history, Right?"
-: 1695242293:0;git add .
+git add .
+git cm -m "Moved Waybar config to Nix\!"
+git pu origin main
+hx README.md
+git add .
+git cm -m "Fixed README.md
+git cm -m "Fixed README.md"
+git pu origin main
+git add .
+git cm -c "Cleaned waybar.nix"
+git cm -m "Cleaned waybar.nix"
+git pu origin main
+nvim
+mkdir home-manager/programs
+cd home-manager/programs
+mkdir nvim
+cd nvim
+hx nvim.nix
+hx options.lua
+hx plugins/cmp.lua
+ls
+hx plugins/lsp.lua
+hx telescope.lua
+hx plugins/treesitter.lua
+hx plugins/lualine.lua
+hx nvim.nix
+nvim
+home-switch
+hx default.nix
+ls
+hx ../default.nix
+home-switch
+ls
+cd ../
+ls
+cd ../
+git add .
+home-switch
+hx home-manager/programs/nvim/nvim.nix
+home-switch
+hx home-manager/programs/nvim/default.nix
+hx home-manager/programs/defu
+hx home-manager/programs/default.nix
+home-switch
+git status
+git add .
+home-switch
+nvim
+hx ~/.config/nvim/init.lua
+hx home-manager/programs/nvim
+home-switch
+nvim
+hx home-manager/programs/nvim/nvim.nix
+home-switch
+nvim
+hx home-manager/programs/nvim/nvim.nix
+home-switch
+nvim
+cd ../
+git add .
+vim README.md
+git add .
+git cm -m "Removed NeoVim config to Home-Manager"
+git pu origin main
+vim .gitignore
+git add .
+git cm -m "Added .gitignore"
+git pu origin main
+vim .gitignore
+git add .
+git cm -m "Fixed .gitignore"
+git pu origin main
+vim .gitignore
+ls
+git add .
+git cm -m "Fixed .gitignore"
+git pu origin main
+git status
+vim .gitignore
+git add .
+git cm -m "Fixed .gitignore"
+git pu origin main
+vim .gitignore
+git add .
+git pu origin main
+git cm -m "Fixed .gitignore"
+git pu origin main
+echo "Fuck it it's not like that someone will hack me using my history, Right?"
+git add .
+git cm -m ".gitignore doesn't work, I'll fix it later"
+git pu origin main
+cat .gitignore
+xit
+exit
+exit
+: 1695321182:0;git status
+: 1695321197:0;git add .
+: 1695321208:0;nvim README.md
+: 1695321239:0;git add .

@@ -153,9 +153,11 @@
     };
   };
 
+  security.polkit.enable = true;
+
   # Gnome keyring
   services.gnome.gnome-keyring.enable = true;
-
+  
   services.emacs.enable = true;
 
   # udisk mounting
@@ -165,7 +167,22 @@
   };
 
   virtualisation.waydroid.enable = true;
-
+  security.polkit.extraConfig = ''
+  polkit.addRule(function(action, subject) {
+    if (
+      subject.isInGroup("users")
+      && (
+        action.id == "org.freedesktop.login1.reboot" ||
+        action.id == "org.freedesktop.login1.reboot-multiple-sessions" ||
+        action.id == "org.freedesktop.login1.power-off" ||
+        action.id == "org.freedesktop.login1.power-off-multiple-sessions"
+        )
+        )
+        {
+          return polkit.Result.YES;
+        }
+      })
+      '';
   # https://nixos.wiki/wiki/FAQ/When_do_I_update_stateVersion
   system.stateVersion = "23.05";
 }

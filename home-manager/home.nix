@@ -40,7 +40,7 @@
   home.packages = with pkgs; [ neofetch ];
 
   home.sessionVariables = {
-    EDITOR = "hx";
+    EDITOR = "nvim";
     BROWSER = "firefox";
     TERMINAL = "kitty";
     XDG_PICTURES_DIR = "~/Pictures/";
