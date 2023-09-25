@@ -1,18 +1,13 @@
-{ pkgs, config, ... }: {
+{ ... }: {
   programs.helix = {
     enable = true;
     settings = {
       theme = "tokyonight_storm";
       editor = {
         line-number = "relative";
-        mouse = false;
         bufferline = "multiple";
         lsp.display-messages = true;
         cursor-shape.insert = "bar";
-        file-picker = {
-          hidden = false;
-          parents = false;
-        };
         indent-guides.render = true;
         soft-wrap.enable = true;
         statusline = {

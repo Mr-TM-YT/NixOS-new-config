@@ -2,7 +2,6 @@
   programs.neovim = 
   let
     toLua = str: "lua << EOF\n${str}\nEOF\n";
-    toLuaFile = file: "lua << EOF\n${builtins.readFile file}\nEOF\n";
   in
   {
     enable = true;
@@ -12,16 +11,16 @@
 
     extraPackages = with pkgs; [
       luajitPackages.lua-lsp
-      wl-clipboard
+      fzf
+      fd
+      ripgrep
+      luajit
     ];
 
     plugins = with pkgs.vimPlugins; [
       
       # File Explorer
-      {
-        plugin = nvim-tree-lua;
-        config = toLuaFile ./plugins/nvim-tree.lua;
-      }
+			nvim-tree-lua
       {
         plugin = which-key-nvim;
         config = toLua "require('which-key').setup()";
@@ -37,25 +36,18 @@
       }
 
       # Terminal Emulator
-      {
-        plugin = nvterm;
-        config = toLuaFile ./plugins/nvterm.lua;
-      }
-      
+      nvterm
+
       # For adding intdentation guides
       # {
       #   plugin = indent-blankline-nvim;
       #   config = toLua "require('indent_blankline').setup({})";
       # }
-      
 
-      # Auto Pairs
+
       auto-pairs
-      
-      {
-        plugin = nvim-lspconfig;
-        config = toLuaFile ./plugins/lsp.lua;
-      }
+
+      nvim-lspconfig
 
       {
         plugin = comment-nvim;
@@ -68,54 +60,49 @@
       }
 
       neodev-nvim
+      nvim-cmp
 
-      nvim-cmp 
-      {
-        plugin = nvim-cmp;
-        config = toLuaFile ./plugins/cmp.lua;
-      }
-
-      {
-        plugin = telescope-nvim;
-        config = toLuaFile ./plugins/telescope.lua;
-      }
-
+      telescope-nvim
       telescope-fzf-native-nvim
 
       cmp_luasnip
       cmp-nvim-lsp
-
       luasnip
       friendly-snippets
 
-      {
-        plugin = lualine-nvim;
-        config = toLuaFile ./plugins/lualine.lua;
-      }
+      lualine-nvim
       nvim-web-devicons
 
-      {
-        plugin = (nvim-treesitter.withPlugins (p: [
-          p.tree-sitter-nix
-          p.tree-sitter-vim
-          p.tree-sitter-bash
-          p.tree-sitter-lua
-          p.tree-sitter-javascript
-          p.tree-sitter-typescript
-          p.tree-sitter-html
-          p.tree-sitter-css
-          p.tree-sitter-json
-          p.tree-sitter-markdown
-        ]));
-        config = toLuaFile ./plugins/treesitter.lua;
-      }
+      (nvim-treesitter.withPlugins (p: [
+        p.tree-sitter-nix
+        p.tree-sitter-vim
+        p.tree-sitter-bash
+        p.tree-sitter-lua
+        p.tree-sitter-javascript
+        p.tree-sitter-typescript
+        p.tree-sitter-html
+        p.tree-sitter-css
+        p.tree-sitter-json
+        p.tree-sitter-markdown
+        p.tree-sitter-make
+      ]))
+      
+      # Git stuff
+      vim-fugitive
 
       vim-nix
-      
     ];
 
     extraLuaConfig = ''
       ${builtins.readFile ./options.lua}
+      ${builtins.readFile ./plugins/telescope.lua}
+      ${builtins.readFile ./plugins/nvim-tree.lua}
+      ${builtins.readFile ./plugins/treesitter.lua}
+      ${builtins.readFile ./plugins/lualine.lua}
+      ${builtins.readFile ./plugins/lsp.lua}
+      ${builtins.readFile ./plugins/cmp.lua}
+      ${builtins.readFile ./plugins/nvterm.lua}
+      vim.keymap.set('n', '<leader>gs', vim.cmd.Git)
     '';
   };
 }

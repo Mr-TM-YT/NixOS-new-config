@@ -13,7 +13,7 @@
       };
       completionInit = ''
         				autoload -Uz compinit
-        				neofetch
+        				fastfetch
         				compinit
         				'';
       historySubstringSearch = {

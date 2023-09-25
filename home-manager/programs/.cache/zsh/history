@@ -31,3 +31,25 @@ exit
 : 1695250024:0;nvim nvim/plugins/nvim-tree.lua
 : 1695250057:0;home-switch
 : 1695250225:0;nvim
+: 1695326404:0;ls
+: 1695326407:0;vi .
+: 1695326518:0;home-switch
+: 1695326533:0;nvim
+: 1695326539:0;nvim .
+: 1695330350:0;ls
+: 1695330356:0;cd ../../../
+: 1695662566:0;nvim nvim/nvim.nix
+: 1695662649:0;home-switch
+: 1695662871:0;nvim
+: 1695662874:0;home-switch
+: 1695662928:0;nvim nvim/plugins/telescope.lua
+: 1695663076:0;home-switch
+: 1695663087:0;nvim
+: 1695663098:0;nvim nvim/options.lua
+: 1695663116:0;nvim nvim/nvim.nix
+: 1695663130:0;nvim .
+: 1695663136:0;nvim
+: 1695663145:0;nvim nvim/nvim.nix
+: 1695663174:0;home-switch
+: 1695663191:0;nvim .
+: 1695663209:0;cd nvim

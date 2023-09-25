@@ -233,7 +233,85 @@ cat .gitignore
 xit
 exit
 exit
-: 1695321182:0;git status
-: 1695321197:0;git add .
-: 1695321208:0;nvim README.md
-: 1695321239:0;git add .
+git status
+git add .
+nvim README.md
+git add .
+git cm -m "Imporved NeoVim config"
+git pu origin main
+nvim
+root-switch
+nvim
+home-switch
+nvim
+nvim home-manager/programs/nvim/plugins/telescope.lua
+nvim home-manager/programs/nvim/plugins/nvim-tree.lua
+home-switch
+nivm
+nvim
+exit
+ls
+\cd programs
+cd programs
+vim .
+home-switch
+vim .
+vim home-manager/programs/nvim/nvim.nix
+nvim home-manager/programs/nvim/plugins/nvim-tree.lua
+home-switch
+nvim home-manager/programs/nvim/plugins/nvim-tree.lua
+home-switch
+nvim home-manager/programs/nvim/plugins/telescope.lua
+home-switch
+nvim home-manager/programs/nvim/plugins/telescope.lua
+home-switch
+nvim home-manager/programs/nvim/plugins/telescope.lua
+home-switch
+nvim home-manager/programs/nvim/plugins/telescope.lua
+home-switch
+nvim ~/.config/hypr/start.sh
+nvim ~/.config/hypr/hyprland.conf
+exit
+ls
+nvim .
+nvim
+nvim .
+nvim
+nivm
+nvim
+exit
+nix flake update
+suod nix flake update
+ls
+git status
+hx README.md
+sudo home-manager switch --flake ~/system/#mohamed@mohamed-pc
+root-switch
+home-switch
+sudo home-manager switch --flake ~/system/#mohamed@mohamed-pc
+hx flake.lock
+home-switch
+root-switch
+fastfetch
+ls
+whoami
+pwd
+exit
+nvim .
+home-switch
+nvim .
+home-switch
+cd ../Projects/Web/DiscordBot
+nvim .
+home-switch
+\:q
+exdit
+exit
+: 1695667151:0;nvim
+: 1695667181:0;home-switch
+: 1695667211:0;nvim .
+: 1695667250:0;home-switch
+: 1695667264:0;vim .
+: 1695667301:0;ls
+: 1695667303:0;git status
+: 1695667332:0;git add .

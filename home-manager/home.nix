@@ -37,7 +37,7 @@
     homeDirectory = "/home/mohamed";
   };
 
-  home.packages = with pkgs; [ neofetch ];
+  home.packages = with pkgs; [ fastfetch ];
 
   home.sessionVariables = {
     EDITOR = "nvim";

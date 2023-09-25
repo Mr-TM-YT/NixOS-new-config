@@ -5,6 +5,7 @@ vim.g.loaded_netrwPlugin = 1
 vim.g.mapleader = ' '
 vim.g.maplocalleader = ' '
 
+vim.o.undofile = true
 vim.o.clipboard = 'unnamedplus'
 
 vim.o.number = true

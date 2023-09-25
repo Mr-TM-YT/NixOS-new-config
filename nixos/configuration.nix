@@ -166,7 +166,11 @@
     mountOnMedia = true;
   };
 
-  virtualisation.waydroid.enable = true;
+  virtualisation = {
+    waydroid.enable = true;
+    lxd.enable = true;
+  };
+
   security.polkit.extraConfig = ''
   polkit.addRule(function(action, subject) {
     if (

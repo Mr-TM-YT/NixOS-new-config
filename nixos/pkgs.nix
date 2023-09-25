@@ -7,7 +7,7 @@
     wget
     git
     firefox
-    fzf
+    wl-clipboard
     pulseaudio
     kitty
     emacs29-pgtk
@@ -15,7 +15,6 @@
     xdg-desktop-portal-gtk
     eww
     discord
-    luajit
     nix-prefetch-git
     nil #lsp
     gvfs
