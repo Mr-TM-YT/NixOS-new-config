@@ -85,6 +85,7 @@
         p.tree-sitter-json
         p.tree-sitter-markdown
         p.tree-sitter-make
+        p.tree-sitter-vimdoc
       ]))
       
       # Git stuff

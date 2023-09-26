@@ -307,11 +307,28 @@ home-switch
 \:q
 exdit
 exit
-: 1695667151:0;nvim
-: 1695667181:0;home-switch
-: 1695667211:0;nvim .
-: 1695667250:0;home-switch
-: 1695667264:0;vim .
-: 1695667301:0;ls
-: 1695667303:0;git status
-: 1695667332:0;git add .
+nvim
+home-switch
+nvim .
+home-switch
+vim .
+ls
+git status
+git add .
+git cm -m "Fixed my NeoVim config and added some cool stuff that I forgot :p"
+git pu origin main
+exit
+: 1695667538:0;cd ../Projects/Web/DiscordBot
+: 1695668190:0;nvim .
+: 1695668254:0;cd ~/Projects/Python/DiscordBot
+: 1695679689:0;nvim .
+: 1695679784:0;home-switch
+: 1695679931:0;nvim
+: 1695679975:0;nvim .
+: 1695680025:0;home-switch
+: 1695680140:0;nvim .
+: 1695681466:0;vim .
+: 1695725627:0;nvim .
+: 1695726228:0;git add .
+: 1695726234:0;git status
+: 1695726243:0;git add .

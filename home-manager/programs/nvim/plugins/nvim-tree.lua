@@ -18,8 +18,7 @@
 			preserve_window_proportions = true,
 		},
 		git = {
-			enable = false,
-			ignore = true,
+			enable = false, ignore = true,
 		},
 		filesystem_watchers = {
 			enable = true,

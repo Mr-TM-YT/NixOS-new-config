@@ -73,3 +73,7 @@ require('lspconfig').emmet_ls.setup {
 	capabilities = capabilities,
 }
 
+require('lspconfig').jedi_language_server.setup {
+	on_attach = on_attach,
+	capabilities = capabilities,
+}
