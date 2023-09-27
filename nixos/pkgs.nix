@@ -9,6 +9,7 @@
     firefox
     wl-clipboard
     pulseaudio
+    pamixer
     kitty
     emacs29-pgtk
     neovim

@@ -6,6 +6,7 @@
   imports = [
     ./programs
     ./themes
+    inputs.gbar.homeManagerModules.x86_64-linux.default
   ];
 
   nixpkgs = {
@@ -84,10 +85,13 @@
     zoxide = {
       enable = true;
     };
+
     starship = {
       enable = true;
     };
+
     tint2.enable = true;
+
     mpv = {
       enable = true;
       config = {

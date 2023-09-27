@@ -17,9 +17,9 @@
     hyprland.url = "github:hyprwm/Hyprland";
     hyprland.inputs.nixpkgs.follows = "nixpkgs";
 
-    # Waybar For Hyprland
-    # waybar-hyprland.url = "github:hyprwm/hyprland";
-
+    # GBar!!
+    gbar.url = "github:scorpion-26/gBar";
+    
     # Firefox extensions
     firefox-addons = {
       url = "gitlab:rycee/nur-expressions?dir=pkgs/firefox-addons";
@@ -89,8 +89,8 @@
           modules = [
             # > Our main home-manager configuration file <
             ./home-manager/home.nix
-            # hyprland.homeManagerModules.default
-            # {wayland.windowManager.hyprland.enable = true;}
+            hyprland.homeManagerModules.default
+            {wayland.windowManager.hyprland.enable = true;}
           ];
         };
       };

@@ -7,6 +7,8 @@
     ./zsh.nix
     ./helix.nix
     ./nvim
+    ./hyprland
+    ./gbar.nix
   ];
 }
 

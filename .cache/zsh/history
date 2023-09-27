@@ -318,17 +318,63 @@ git add .
 git cm -m "Fixed my NeoVim config and added some cool stuff that I forgot :p"
 git pu origin main
 exit
-: 1695667538:0;cd ../Projects/Web/DiscordBot
-: 1695668190:0;nvim .
-: 1695668254:0;cd ~/Projects/Python/DiscordBot
-: 1695679689:0;nvim .
-: 1695679784:0;home-switch
-: 1695679931:0;nvim
-: 1695679975:0;nvim .
-: 1695680025:0;home-switch
-: 1695680140:0;nvim .
-: 1695681466:0;vim .
-: 1695725627:0;nvim .
-: 1695726228:0;git add .
-: 1695726234:0;git status
-: 1695726243:0;git add .
+cd ../Projects/Web/DiscordBot
+nvim .
+cd ~/Projects/Python/DiscordBot
+nvim .
+home-switch
+nvim
+nvim .
+home-switch
+nvim .
+vim .
+nvim .
+git add .
+git status
+git add .
+git cm -m "Cleanded Vscodium config"
+git pu origin main
+vim .
+cd ~
+vim .
+home-switch
+cd ~/Projects/Web/SimpleWebApp
+vim .
+exit
+vim .
+exit
+git add .
+home-switch
+vim .
+git add .
+home-switch
+vim .
+home-switch
+vim .
+home-switch
+vim .
+git add .
+home-switch
+vim flake.nix
+home-switch
+cd ../
+vim .
+home-switch
+vim .
+home-switch
+cd ../
+vim .
+home-switch
+git status
+git add .
+exit
+: 1695818589:0;ls
+: 1695818592:0;git add .
+: 1695818603:0;sudo git add .
+: 1695818609:0;home-switch
+: 1695818645:0;vim .
+: 1695818657:0;home-switch
+: 1695819285:0;gbar
+: 1695819287:0;gBar
+: 1695819576:0;vim .
+: 1695819613:0;git add .
