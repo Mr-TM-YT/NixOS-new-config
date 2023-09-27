@@ -378,3 +378,7 @@ exit
 : 1695819287:0;gBar
 : 1695819576:0;vim .
 : 1695819613:0;git add .
+: 1695819638:0;git cm -m "Made HomeManager manage Hyprland config and added gBar (needs fixing)"
+: 1695819642:0;git pu origin mian
+: 1695819644:0;git pu origin main
+: 1695837972:0;git add .
