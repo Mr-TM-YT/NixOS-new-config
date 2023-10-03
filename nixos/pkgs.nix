@@ -11,6 +11,8 @@
     pulseaudio
     pamixer
     kitty
+    heroic
+    bottles
     emacs29-pgtk
     neovim
     xdg-desktop-portal-gtk
@@ -26,6 +28,7 @@
     helix
     xfce.thunar
     swww
+    mpvpaper
     eza
     bibata-cursors
     rofi-wayland

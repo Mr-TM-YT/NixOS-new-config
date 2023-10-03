@@ -368,17 +368,54 @@ home-switch
 git status
 git add .
 exit
-: 1695818589:0;ls
-: 1695818592:0;git add .
-: 1695818603:0;sudo git add .
-: 1695818609:0;home-switch
-: 1695818645:0;vim .
-: 1695818657:0;home-switch
-: 1695819285:0;gbar
-: 1695819287:0;gBar
-: 1695819576:0;vim .
-: 1695819613:0;git add .
-: 1695819638:0;git cm -m "Made HomeManager manage Hyprland config and added gBar (needs fixing)"
-: 1695819642:0;git pu origin mian
-: 1695819644:0;git pu origin main
-: 1695837972:0;git add .
+ls
+git add .
+sudo git add .
+home-switch
+vim .
+home-switch
+gbar
+gBar
+vim .
+git add .
+git cm -m "Made HomeManager manage Hyprland config and added gBar (needs fixing)"
+git pu origin mian
+git pu origin main
+git add .
+git cm -m "Fixed the wallpaper problem"
+git pu origin main
+vim .
+home-switch
+nvim .
+home-switch
+cd ../Downloads
+vim .
+home-switch
+vim .
+cd ../Projects/Java/
+vim .
+root-switch
+cd system
+ls
+nvim .
+exit
+vim .
+root-switch
+cd ../
+vim .
+home-switch
+vim .
+mpvpaper '*' ~/Wallpapers/bg1.mp4
+home-switch
+vim .
+exit
+vim .
+exit
+: 1696265264:0;vim .
+: 1696265305:0;home-switch
+: 1696265394:0;vim .
+: 1696265438:0;home-switch
+: 1696265465:0;vim .
+: 1696265478:0;home-switch
+: 1696341093:0;git status
+: 1696341095:0;git add .

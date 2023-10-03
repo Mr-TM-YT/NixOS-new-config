@@ -8,7 +8,6 @@
     ./helix.nix
     ./nvim
     ./hyprland
-    ./gbar.nix
   ];
 }
 

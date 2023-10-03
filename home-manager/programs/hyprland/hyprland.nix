@@ -34,8 +34,8 @@
           general {
         # See https://wiki.hyprland.org/Configuring/Variables/ for more
 
-        gaps_in = 5
-        gaps_out = 10
+        gaps_in = 7 
+        gaps_out = 15
         border_size = 2
         col.active_border = rgba(33ccffee) rgba(00ff99ee) 45deg
         col.inactive_border = rgba(595959aa)
@@ -56,11 +56,11 @@
           xray = true
           noise = 0.05
         }
-        active_opacity = 0.8
-        inactive_opacity = 0.8
+        active_opacity = 0.7
+        inactive_opacity = 0.6
         drop_shadow = yes
-        shadow_range = 4
-        shadow_render_power = 3
+        shadow_range = 10
+        shadow_render_power = 5
         col.shadow = rgba(1a1a1aee)
       }
 
@@ -175,19 +175,22 @@
 
 
 
-    bind = $mainMod, 1, exec, swww img ~/Wallpapers/bg1.jpg &
+    bind = $mainMod, 1, exec, swww img ~/Wallpapers/bg5.gif &
 
     # Some binds I like!
+
+    bind = $mainMod, F, fullscreen,
+
     bind = , xf86audioraisevolume, exec, pactl set-sink-volume @DEFAULT_SINK@ +5%
     bind = , xf86audiolowervolume, exec, pactl set-sink-volume @DEFAULT_SINK@ -5% 
 
-    bind = SUPER_ALT, S, exec, grim -g "$(slurp)"
-    bind = SUPER_SHIFT, B, exec, firefox
-    bind = SUPER_SHIFT, D, exec, discord
+    bind = $mainMod ALT, S, exec, grim -g "$(slurp)"
+    bind = $mainMod SHIFT, B, exec, firefox
+    bind = $mainMod SHIFT, D, exec, discord
 
     # Startup apps
-    exec-once = swww kill
-    exec-once = swww init & swww img ~/Wallpapers/bg1.jpg & nm-applet --indicator & waybar & swaync & udiskie &
-
+    exec-once = swww init
+    exec-once = swww img ~/Wallpapers/bg5.gif
+    exec-once =  nm-applet --indicator & waybar & swaync & udiskie &
   '';
 }

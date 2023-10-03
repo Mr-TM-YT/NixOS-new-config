@@ -6,7 +6,7 @@
   imports = [
     ./programs
     ./themes
-    inputs.gbar.homeManagerModules.x86_64-linux.default
+    # inputs.gbar.homeManagerModules.x86_64-linux.default
   ];
 
   nixpkgs = {
@@ -38,7 +38,7 @@
     homeDirectory = "/home/mohamed";
   };
 
-  home.packages = with pkgs; [ fastfetch ];
+  home.packages = with pkgs; [ fastfetch ppsspp-sdl-wayland ];
 
   home.sessionVariables = {
     EDITOR = "nvim";
