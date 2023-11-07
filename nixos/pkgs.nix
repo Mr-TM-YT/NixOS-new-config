@@ -11,24 +11,17 @@
     pulseaudio
     pamixer
     kitty
-    heroic
-    bottles
-    emacs29-pgtk
     neovim
     xdg-desktop-portal-gtk
-    eww
     discord
     nix-prefetch-git
     nil #lsp
     gvfs
     zip
-    polkit_gnome
     unzip
-    gparted
     helix
     xfce.thunar
     swww
-    mpvpaper
     eza
     bibata-cursors
     rofi-wayland
