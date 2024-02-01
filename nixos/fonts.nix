@@ -11,7 +11,12 @@
     fira-code
     fira-code-symbols
     font-awesome
+<<<<<<< HEAD
     (nerdfonts.override { fonts = [ "JetBrainsMono" ]; })
+=======
+    kawkab-mono-font
+    (nerdfonts.override { fonts = [ "JetBrainsMono" "FiraCode" ]; })
+>>>>>>> 4e56933 (Improved vscodium.nix)
     # (nerdfonts.override { fonts = [ "FantasqueSansMono" ]; })
   ];
 }

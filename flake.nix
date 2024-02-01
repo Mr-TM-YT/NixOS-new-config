@@ -10,16 +10,23 @@
     # Also see the 'unstable-packages' overlay at 'overlays/default.nix'.
 
     # Home manager
+<<<<<<< HEAD
     home-manager.url = "github:nix-community/home-manager/release-23.05";
+=======
+    home-manager.url = "github:nix-community/home-manager";
+>>>>>>> 4e56933 (Improved vscodium.nix)
     home-manager.inputs.nixpkgs.follows = "nixpkgs";
 
     # Hyprland (available in nix unstable only atm)
     hyprland.url = "github:hyprwm/Hyprland";
     hyprland.inputs.nixpkgs.follows = "nixpkgs";
 
+<<<<<<< HEAD
     # GBar!!
     gbar.url = "github:scorpion-26/gBar";
     
+=======
+>>>>>>> 4e56933 (Improved vscodium.nix)
     # Firefox extensions
     firefox-addons = {
       url = "gitlab:rycee/nur-expressions?dir=pkgs/firefox-addons";
@@ -70,7 +77,11 @@
       # Available through 'nixos-rebuild --flake .#your-hostname'
       nixosConfigurations = {
         # FIXME replace with your hostname
+<<<<<<< HEAD
         mohamed-pc = nixpkgs.lib.nixosSystem {
+=======
+        apollo = nixpkgs.lib.nixosSystem {
+>>>>>>> 4e56933 (Improved vscodium.nix)
           specialArgs = { inherit inputs outputs; };
           modules = [
             # > Our main nixos configuration file <
@@ -83,7 +94,11 @@
       # Available through 'home-manager --flake .#your-username@your-hostname'
       homeConfigurations = {
         # FIXME replace with your username@hostname
+<<<<<<< HEAD
         "mohamed@mohamed-pc" = home-manager.lib.homeManagerConfiguration {
+=======
+        "mohamed@apollo" = home-manager.lib.homeManagerConfiguration {
+>>>>>>> 4e56933 (Improved vscodium.nix)
           pkgs = nixpkgs.legacyPackages.x86_64-linux; # Home-manager requires 'pkgs' instance
           extraSpecialArgs = { inherit inputs outputs hyprland; };
           modules = [

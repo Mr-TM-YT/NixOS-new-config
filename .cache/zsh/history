@@ -419,6 +419,15 @@ exit
 : 1696265478:0;home-switch
 : 1696341093:0;git status
 : 1696341095:0;git add .
-: 1706781266:0;ls
-: 1706781269:0;vim .
-: 1706781337:0;git add .
+: 1706781005:0;ls
+: 1706781010:0;codium .
+: 1706781091:0;git pull origin main
+: 1706781104:0;git merget
+: 1706781106:0;git merge
+: 1706781113:0;git merge origin main
+: 1706781121:0;git add .
+: 1706781124:0;git cm -m "Improved vscodium.nix"
+: 1706781130:0;git push origin main
+: 1706781152:0;git pull origin main
+: 1706781175:0;git pu origin main
+: 1706781412:0;git add .

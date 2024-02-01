@@ -55,7 +55,11 @@
   };
 
   networking.networkmanager.enable = true; # Easiest to use and most distros use this by default.
+<<<<<<< HEAD
   networking.hostName = "mohamed-pc";
+=======
+  networking.hostName = "apollo";
+>>>>>>> 4e56933 (Improved vscodium.nix)
 
   # Set your time zone.
   time.timeZone = "Africa/Cairo";
@@ -93,7 +97,11 @@
     desktopManager.xterm.enable = false;
     displayManager.sddm = {
       enable = true;
+<<<<<<< HEAD
       theme = "tokyo-night-sddm";
+=======
+      theme = "sddm-theme";
+>>>>>>> 4e56933 (Improved vscodium.nix)
       settings.Theme.CursorTheme = "Bibata-Modern-Classic";
     };
   };
@@ -154,8 +162,11 @@
 
   # Gnome keyring
   services.gnome.gnome-keyring.enable = true;
+<<<<<<< HEAD
   
   services.emacs.enable = true;
+=======
+>>>>>>> 4e56933 (Improved vscodium.nix)
 
   # udisk mounting
   services.udisks2 = {
@@ -185,5 +196,9 @@
       })
       '';
   # https://nixos.wiki/wiki/FAQ/When_do_I_update_stateVersion
+<<<<<<< HEAD
   system.stateVersion = "23.05";
+=======
+  system.stateVersion = "23.11";
+>>>>>>> 4e56933 (Improved vscodium.nix)
 }

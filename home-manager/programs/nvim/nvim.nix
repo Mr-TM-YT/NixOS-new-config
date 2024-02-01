@@ -1,11 +1,16 @@
 { pkgs, ...}: {
+<<<<<<< HEAD
   programs.neovim = 
+=======
+  programs.neovim =
+>>>>>>> 4e56933 (Improved vscodium.nix)
   let
     toLua = str: "lua << EOF\n${str}\nEOF\n";
   in
   {
     enable = true;
     viAlias = true;
+<<<<<<< HEAD
     vimAlias = true;
     vimdiffAlias = true;
 
@@ -25,6 +30,35 @@
         plugin = which-key-nvim;
         config = toLua "require('which-key').setup()";
       }      
+=======
+    vimAlias = true; vimdiffAlias = true;
+
+    extraPackages = with pkgs; [
+      fzf
+      fd
+      ripgrep
+      stylua
+      luajit
+      luajitPackages.lua-lsp
+    ];
+
+    plugins = with pkgs.vimPlugins; [
+
+      # File Explorer
+			nvim-tree-lua
+
+
+      # A Cool Color Picker
+      {
+        plugin = ccc-nvim;
+        config = toLua "require('ccc').setup({})";
+      }
+
+      {
+        plugin = which-key-nvim;
+        config = toLua "require('which-key').setup()";
+      }
+>>>>>>> 4e56933 (Improved vscodium.nix)
       {
         plugin = gitsigns-nvim;
         config = toLua "require('gitsigns').setup()";
@@ -44,6 +78,11 @@
       #   config = toLua "require('indent_blankline').setup({})";
       # }
 
+<<<<<<< HEAD
+=======
+      # For formatting
+      formatter-nvim
+>>>>>>> 4e56933 (Improved vscodium.nix)
 
       auto-pairs
 
@@ -77,6 +116,11 @@
         p.tree-sitter-nix
         p.tree-sitter-vim
         p.tree-sitter-bash
+<<<<<<< HEAD
+=======
+        p.tree-sitter-cpp
+        p.tree-sitter-c
+>>>>>>> 4e56933 (Improved vscodium.nix)
         p.tree-sitter-lua
         p.tree-sitter-javascript
         p.tree-sitter-typescript
@@ -87,11 +131,21 @@
         p.tree-sitter-make
         p.tree-sitter-vimdoc
       ]))
+<<<<<<< HEAD
       
+=======
+
+>>>>>>> 4e56933 (Improved vscodium.nix)
       # Git stuff
       vim-fugitive
 
       vim-nix
+<<<<<<< HEAD
+=======
+
+      # For taking notes
+      neorg
+>>>>>>> 4e56933 (Improved vscodium.nix)
     ];
 
     extraLuaConfig = ''
@@ -103,6 +157,11 @@
       ${builtins.readFile ./plugins/lsp.lua}
       ${builtins.readFile ./plugins/cmp.lua}
       ${builtins.readFile ./plugins/nvterm.lua}
+<<<<<<< HEAD
+=======
+      ${builtins.readFile ./plugins/formatter.lua}
+      ${builtins.readFile ./plugins/neorg.lua}
+>>>>>>> 4e56933 (Improved vscodium.nix)
       vim.keymap.set('n', '<leader>gs', vim.cmd.Git)
     '';
   };
