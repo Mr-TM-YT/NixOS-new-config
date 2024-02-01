@@ -9,19 +9,11 @@
       },
       "locked": {
         "dir": "pkgs/firefox-addons",
-<<<<<<< HEAD
-        "lastModified": 1694059354,
-        "narHash": "sha256-SZjVUwLoYFyUWcrbgIIyVLycggBGNumuhN/YfjbdPxI=",
-        "owner": "rycee",
-        "repo": "nur-expressions",
-        "rev": "4e879b20adf07c0033114f095d53cdb42ff33485",
-=======
         "lastModified": 1706306805,
         "narHash": "sha256-BWJdcDmpqZuxCStx4RUl5SD6uELy8hRa5YzwFTdWrts=",
         "owner": "rycee",
         "repo": "nur-expressions",
         "rev": "24985136f4a5f98254e88c26d428114d206c2565",
->>>>>>> 4e56933 (Improved vscodium.nix)
         "type": "gitlab"
       },
       "original": {
@@ -46,46 +38,6 @@
         "type": "github"
       }
     },
-<<<<<<< HEAD
-    "flake-utils_2": {
-      "inputs": {
-        "systems": "systems"
-      },
-      "locked": {
-        "lastModified": 1689068808,
-        "narHash": "sha256-6ixXo3wt24N/melDWjq70UuHQLxGV8jZvooRanIHXw0=",
-        "owner": "numtide",
-        "repo": "flake-utils",
-        "rev": "919d646de7be200f3bf08cb76ae1f09402b6f9b4",
-        "type": "github"
-      },
-      "original": {
-        "owner": "numtide",
-        "repo": "flake-utils",
-        "type": "github"
-      }
-    },
-    "gbar": {
-      "inputs": {
-        "flake-utils": "flake-utils_2",
-        "nixpkgs": "nixpkgs"
-      },
-      "locked": {
-        "lastModified": 1695295842,
-        "narHash": "sha256-/b+K4uGTrK7m2lExl1KMnE5B+yxsom9kv1YlcYSX33o=",
-        "owner": "scorpion-26",
-        "repo": "gBar",
-        "rev": "96485f408efe411f281fa27dceb6d86399ec7804",
-        "type": "github"
-      },
-      "original": {
-        "owner": "scorpion-26",
-        "repo": "gBar",
-        "type": "github"
-      }
-    },
-=======
->>>>>>> 4e56933 (Improved vscodium.nix)
     "home-manager": {
       "inputs": {
         "nixpkgs": [
@@ -93,27 +45,15 @@
         ]
       },
       "locked": {
-<<<<<<< HEAD
-        "lastModified": 1693208669,
-        "narHash": "sha256-hHFaaUsZ860wvppPeiu7nJn/nXZjJfnqAQEu9SPFE9I=",
-        "owner": "nix-community",
-        "repo": "home-manager",
-        "rev": "5bac4a1c06cd77cf8fc35a658ccb035a6c50cd2c",
-=======
         "lastModified": 1706306660,
         "narHash": "sha256-lZvgkHtVeduGByPb0Tz9LpAi4olfkEm8XPgv0o7GRsk=",
         "owner": "nix-community",
         "repo": "home-manager",
         "rev": "b2f56952074cb46e93902ecaabfb04dd93733434",
->>>>>>> 4e56933 (Improved vscodium.nix)
         "type": "github"
       },
       "original": {
         "owner": "nix-community",
-<<<<<<< HEAD
-        "ref": "release-23.05",
-=======
->>>>>>> 4e56933 (Improved vscodium.nix)
         "repo": "home-manager",
         "type": "github"
       }
@@ -124,28 +64,16 @@
         "nixpkgs": [
           "nixpkgs"
         ],
-<<<<<<< HEAD
-        "systems": "systems_2",
-=======
         "systems": "systems",
->>>>>>> 4e56933 (Improved vscodium.nix)
         "wlroots": "wlroots",
         "xdph": "xdph"
       },
       "locked": {
-<<<<<<< HEAD
-        "lastModified": 1694074808,
-        "narHash": "sha256-gFHAGWaGh5ZM144wPSYJ6EXam3xmyS2wLwjLhjd7OKU=",
-        "owner": "hyprwm",
-        "repo": "Hyprland",
-        "rev": "0be6b03ee972fcc4921984f3b68469a2ee121511",
-=======
         "lastModified": 1706410805,
         "narHash": "sha256-uRSL+r0nt172K/29IE2JfabH039UjkMcJ/o93EA2lic=",
         "owner": "hyprwm",
         "repo": "Hyprland",
         "rev": "df990c80e211553fc63136072b0e518860172f2f",
->>>>>>> 4e56933 (Improved vscodium.nix)
         "type": "github"
       },
       "original": {
@@ -179,31 +107,6 @@
         "type": "github"
       }
     },
-<<<<<<< HEAD
-    "nixpkgs": {
-      "locked": {
-        "lastModified": 1689752456,
-        "narHash": "sha256-VOChdECcEI8ixz8QY+YC4JaNEFwQd1V8bA0G4B28Ki0=",
-        "owner": "NixOS",
-        "repo": "nixpkgs",
-        "rev": "7f256d7da238cb627ef189d56ed590739f42f13b",
-        "type": "github"
-      },
-      "original": {
-        "owner": "NixOS",
-        "ref": "nixpkgs-unstable",
-        "repo": "nixpkgs",
-        "type": "github"
-      }
-    },
-    "nixpkgs_2": {
-      "locked": {
-        "lastModified": 1694422566,
-        "narHash": "sha256-lHJ+A9esOz9vln/3CJG23FV6Wd2OoOFbDeEs4cMGMqc=",
-        "owner": "nixos",
-        "repo": "nixpkgs",
-        "rev": "3a2786eea085f040a66ecde1bc3ddc7099f6dbeb",
-=======
     "hyprlang": {
       "inputs": {
         "nixpkgs": [
@@ -233,7 +136,6 @@
         "owner": "nixos",
         "repo": "nixpkgs",
         "rev": "ae5c332cbb5827f6b1f02572496b141021de335f",
->>>>>>> 4e56933 (Improved vscodium.nix)
         "type": "github"
       },
       "original": {
@@ -246,38 +148,13 @@
     "root": {
       "inputs": {
         "firefox-addons": "firefox-addons",
-<<<<<<< HEAD
-        "gbar": "gbar",
-        "home-manager": "home-manager",
-        "hyprland": "hyprland",
-        "nixpkgs": "nixpkgs_2"
-=======
         "home-manager": "home-manager",
         "hyprland": "hyprland",
         "nixpkgs": "nixpkgs"
->>>>>>> 4e56933 (Improved vscodium.nix)
       }
     },
     "systems": {
       "locked": {
-<<<<<<< HEAD
-        "lastModified": 1681028828,
-        "narHash": "sha256-Vy1rq5AaRuLzOxct8nz4T6wlgyUR7zLU309k9mBC768=",
-        "owner": "nix-systems",
-        "repo": "default",
-        "rev": "da67096a3b9bf56a91d16901293e51ba5b49a27e",
-        "type": "github"
-      },
-      "original": {
-        "owner": "nix-systems",
-        "repo": "default",
-        "type": "github"
-      }
-    },
-    "systems_2": {
-      "locked": {
-=======
->>>>>>> 4e56933 (Improved vscodium.nix)
         "lastModified": 1689347949,
         "narHash": "sha256-12tWmuL2zgBgZkdoB6qXZsgJEH9LR3oUgpaQq2RbI80=",
         "owner": "nix-systems",
@@ -295,30 +172,18 @@
       "flake": false,
       "locked": {
         "host": "gitlab.freedesktop.org",
-<<<<<<< HEAD
-        "lastModified": 1692976565,
-        "narHash": "sha256-eBKkG7tMxg92NskEn8dHRFY245JwjirWRoOZzW6DnUw=",
-        "owner": "wlroots",
-        "repo": "wlroots",
-        "rev": "717ded9bb0191ea31bf4368be32e7a15fe1b8294",
-=======
         "lastModified": 1706359063,
         "narHash": "sha256-5HUTG0p+nCJv3cn73AmFHRZdfRV5AD5N43g8xAePSKM=",
         "owner": "wlroots",
         "repo": "wlroots",
         "rev": "00b869c1a96f300a8f25da95d624524895e0ddf2",
->>>>>>> 4e56933 (Improved vscodium.nix)
         "type": "gitlab"
       },
       "original": {
         "host": "gitlab.freedesktop.org",
         "owner": "wlroots",
         "repo": "wlroots",
-<<<<<<< HEAD
-        "rev": "717ded9bb0191ea31bf4368be32e7a15fe1b8294",
-=======
         "rev": "00b869c1a96f300a8f25da95d624524895e0ddf2",
->>>>>>> 4e56933 (Improved vscodium.nix)
         "type": "gitlab"
       }
     },
@@ -328,10 +193,7 @@
           "hyprland",
           "hyprland-protocols"
         ],
-<<<<<<< HEAD
-=======
         "hyprlang": "hyprlang",
->>>>>>> 4e56933 (Improved vscodium.nix)
         "nixpkgs": [
           "hyprland",
           "nixpkgs"
@@ -342,19 +204,11 @@
         ]
       },
       "locked": {
-<<<<<<< HEAD
-        "lastModified": 1694025408,
-        "narHash": "sha256-oJNhGfZH8Z2w3ztXdzsYVg32//cWEcPVDM3+tp/ZVfU=",
-        "owner": "hyprwm",
-        "repo": "xdg-desktop-portal-hyprland",
-        "rev": "022469529c8bc95acf222dc5a62389b04c8b1205",
-=======
         "lastModified": 1706145785,
         "narHash": "sha256-j9MP4fv2U/vdRKAXXc2gyMTmYwVnHP6kHx1/y6jprrU=",
         "owner": "hyprwm",
         "repo": "xdg-desktop-portal-hyprland",
         "rev": "5a592647587cd20b9692a347df6939b6d371b3bb",
->>>>>>> 4e56933 (Improved vscodium.nix)
         "type": "github"
       },
       "original": {

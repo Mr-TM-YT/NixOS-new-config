@@ -55,11 +55,7 @@
   };
 
   networking.networkmanager.enable = true; # Easiest to use and most distros use this by default.
-<<<<<<< HEAD
-  networking.hostName = "mohamed-pc";
-=======
   networking.hostName = "apollo";
->>>>>>> 4e56933 (Improved vscodium.nix)
 
   # Set your time zone.
   time.timeZone = "Africa/Cairo";
@@ -93,15 +89,11 @@
   services.xserver = {
     enable = true;
     layout = "us,ara";
-    xkbOptions = "grp:alt_shift_toggle";
+    # xkbOptions = "grp:alt_shift_toggle";
     desktopManager.xterm.enable = false;
     displayManager.sddm = {
       enable = true;
-<<<<<<< HEAD
       theme = "tokyo-night-sddm";
-=======
-      theme = "sddm-theme";
->>>>>>> 4e56933 (Improved vscodium.nix)
       settings.Theme.CursorTheme = "Bibata-Modern-Classic";
     };
   };
@@ -127,12 +119,6 @@
       gfxmodeEfi = "text";
       gfxmodeBios = "text";
       useOSProber = true;
-      # theme = pkgs.fetchFromGitHub {
-      #   owner = "Teraskull";
-      #   repo = "bigsur-grub2-theme";
-      #   rev = "2e8139afd2b6e4cb2dcaf85d8248cbc10d556c6b";
-      #   sha256 = "1kaig1mc85ni80wdwbljl97ywywamjpixfarnx9w044lfkkvcmzg";
-      # };
       theme = pkgs.grub-theme;
     };
     efi.canTouchEfiVariables = true;
@@ -162,11 +148,6 @@
 
   # Gnome keyring
   services.gnome.gnome-keyring.enable = true;
-<<<<<<< HEAD
-  
-  services.emacs.enable = true;
-=======
->>>>>>> 4e56933 (Improved vscodium.nix)
 
   # udisk mounting
   services.udisks2 = {
@@ -196,9 +177,5 @@
       })
       '';
   # https://nixos.wiki/wiki/FAQ/When_do_I_update_stateVersion
-<<<<<<< HEAD
-  system.stateVersion = "23.05";
-=======
   system.stateVersion = "23.11";
->>>>>>> 4e56933 (Improved vscodium.nix)
 }

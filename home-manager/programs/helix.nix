@@ -29,8 +29,6 @@
         "C-[" = [ "normal_mode" "keep_primary_selection" "collapse_selection" ];
       };
     };
-<<<<<<< HEAD
-=======
     languages = {
       language = [
         {
@@ -74,6 +72,5 @@
         }
       ];
     };
->>>>>>> 4e56933 (Improved vscodium.nix)
   };
 }

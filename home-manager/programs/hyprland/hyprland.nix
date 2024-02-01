@@ -34,11 +34,7 @@
           general {
         # See https://wiki.hyprland.org/Configuring/Variables/ for more
 
-<<<<<<< HEAD
-        gaps_in = 7 
-=======
         gaps_in = 7
->>>>>>> 4e56933 (Improved vscodium.nix)
         gaps_out = 15
         border_size = 2
         col.active_border = rgba(33ccffee) rgba(00ff99ee) 45deg
@@ -53,13 +49,8 @@
         rounding = 10
         blur {
           enabled = true
-<<<<<<< HEAD
-          size = 4 
-          passes = 3 
-=======
           size = 4
           passes = 3
->>>>>>> 4e56933 (Improved vscodium.nix)
           ignore_opacity = true
           new_optimizations = true
           xray = true
@@ -134,19 +125,11 @@
     $mainMod = SUPER
 
     # Example binds, see https://wiki.hyprland.org/Configuring/Binds/ for more
-<<<<<<< HEAD
-    bind = $mainMod, T, exec, kitty
-    bind = $mainMod, C, killactive, 
-    bind = $mainMod, M, exit, 
-    bind = $mainMod, E, exec, thunar 
-    bind = $mainMod, V, togglefloating, 
-=======
     bind = $mainMod, T, exec, wezterm
     bind = $mainMod, C, killactive,
     bind = $mainMod, M, exit,
     bind = $mainMod, E, exec, thunar
     bind = $mainMod, V, togglefloating,
->>>>>>> 4e56933 (Improved vscodium.nix)
     bind = $mainMod, R, exec, rofi -show drun -show-icons
     bind = $mainMod, P, pseudo, # dwindle
     bind = $mainMod, J, togglesplit, # dwindle
@@ -189,36 +172,19 @@
     bindm = $mainMod, mouse:272, movewindow
     bindm = $mainMod, mouse:273, resizewindow
 
-<<<<<<< HEAD
-
-
-
-    bind = $mainMod, 1, exec, swww img ~/Wallpapers/bg5.gif &
-
-=======
->>>>>>> 4e56933 (Improved vscodium.nix)
     # Some binds I like!
 
     bind = $mainMod, F, fullscreen,
 
     bind = , xf86audioraisevolume, exec, pactl set-sink-volume @DEFAULT_SINK@ +5%
-<<<<<<< HEAD
-    bind = , xf86audiolowervolume, exec, pactl set-sink-volume @DEFAULT_SINK@ -5% 
-=======
     bind = , xf86audiolowervolume, exec, pactl set-sink-volume @DEFAULT_SINK@ -5%
->>>>>>> 4e56933 (Improved vscodium.nix)
 
     bind = $mainMod ALT, S, exec, grim -g "$(slurp)"
     bind = $mainMod SHIFT, B, exec, firefox
     bind = $mainMod SHIFT, D, exec, discord
 
     # Startup apps
-<<<<<<< HEAD
-    exec-once = swww init
-    exec-once = swww img ~/Wallpapers/bg5.gif
-=======
     exec-once = mpvpaper -o "no-audio loop" "*" ~/Wallpapers/bg.mp4 &
->>>>>>> 4e56933 (Improved vscodium.nix)
     exec-once =  nm-applet --indicator & waybar & swaync & udiskie &
   '';
 }

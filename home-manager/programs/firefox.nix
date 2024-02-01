@@ -1,8 +1,4 @@
-<<<<<<< HEAD
-{ pkgs, inputs, config, programs, ... }: {
-=======
 { inputs, ... }: {
->>>>>>> 4e56933 (Improved vscodium.nix)
 
   programs = {
     firefox = {
@@ -14,8 +10,6 @@
           "identity.fxaccounts.enabled" = false;
           "signon.rememberSignons" = false;
         };
-<<<<<<< HEAD
-=======
         bookmarks = [
           {
             name = "NixOS package search";
@@ -48,18 +42,12 @@
             url = "https://www.github.com";
           }
         ];
->>>>>>> 4e56933 (Improved vscodium.nix)
         extensions = with inputs.firefox-addons.packages."x86_64-linux"; [
           bitwarden
           ublock-origin
           sponsorblock
-<<<<<<< HEAD
-          tridactyl
-          youtube-shorts-block
-=======
           youtube-shorts-block
           vimium-c
->>>>>>> 4e56933 (Improved vscodium.nix)
         ];
       };
     };
