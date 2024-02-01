@@ -93,7 +93,7 @@
     desktopManager.xterm.enable = false;
     displayManager.sddm = {
       enable = true;
-      theme = "tokyo-night-sddm";
+      # theme = pkgs.sddm-theme;
       settings.Theme.CursorTheme = "Bibata-Modern-Classic";
     };
   };

@@ -4,7 +4,6 @@
     enable = true;
     package = pkgs.vscodium;
     userSettings = {
-      "window.titleBarStyle" = "custom";
       "workbench.iconTheme" = "vscode-icons";
       "vim.overrideCopy" = false;
       "editor.fontFamily" = "JetBrains Mono";
