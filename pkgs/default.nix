@@ -9,5 +9,5 @@
 
 { pkgs ? (import ../nixpkgs.nix) { } }: {
   grub-theme = pkgs.callPackage ./grub-theme.nix { };
-  sddm-theme = pkgs.callPackage ./sddm-theme.nix { };
+  tokyo-night-sddm = pkgs.callPackage ./sddm-theme.nix { };
 }

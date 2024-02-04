@@ -2,7 +2,8 @@
 
   # List packages installed in system profile. To search, run:
   # $ nix search wget
-  environment.systemPackages = with pkgs; [
+  environment.systemPackages = with pkgs; let themes = pkgs.callPackage ../pkgs/sddm-theme.nix { inherit pkgs; }; in
+  [
     home-manager
     git
     firefox
@@ -16,6 +17,8 @@
     discord
     nix-prefetch-git
     nil #lsp
+    rnix-lsp #lsp
+    nixpkgs-fmt
     gvfs
     zip
     unzip
@@ -23,6 +26,7 @@
     xfce.thunar
     swww
     mpvpaper
+    vlc
     eza
     bibata-cursors
     rofi-wayland
@@ -34,5 +38,7 @@
     slurp
     networkmanagerapplet
     udiskie
+    tokyo-night-sddm
+    libsForQt5.qt5.qtgraphicaleffects
   ];
 }

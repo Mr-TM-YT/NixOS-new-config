@@ -22,6 +22,7 @@
       url = "gitlab:rycee/nur-expressions?dir=pkgs/firefox-addons";
       inputs.nixpkgs.follows = "nixpkgs";
     };
+
   };
 
   outputs = { self, nixpkgs, home-manager, hyprland, ... }@inputs:
@@ -66,20 +67,15 @@
 
       # Available through 'nixos-rebuild --flake .#your-hostname'
       nixosConfigurations = {
-        # FIXME replace with your hostname
         apollo = nixpkgs.lib.nixosSystem {
           specialArgs = { inherit inputs outputs; };
           modules = [
-            # > Our main nixos configuration file <
             ./nixos/configuration.nix
           ];
         };
       };
 
-      # Standalone home-manager configuration entrypoint
-      # Available through 'home-manager --flake .#your-username@your-hostname'
       homeConfigurations = {
-        # FIXME replace with your username@hostname
         "mohamed@apollo" = home-manager.lib.homeManagerConfiguration {
           pkgs = nixpkgs.legacyPackages.x86_64-linux; # Home-manager requires 'pkgs' instance
           extraSpecialArgs = { inherit inputs outputs hyprland; };
@@ -87,7 +83,7 @@
             # > Our main home-manager configuration file <
             ./home-manager/home.nix
             hyprland.homeManagerModules.default
-            {wayland.windowManager.hyprland.enable = true;}
+            { wayland.windowManager.hyprland.enable = true; }
           ];
         };
       };

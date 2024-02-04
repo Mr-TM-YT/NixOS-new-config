@@ -23,37 +23,43 @@ home-switch
 nvim
 eix
 exit
-: 1695249842:0;nvim nvim/plugins/nvim-tree.lua
-: 1695249968:0;git add .
-: 1695249971:0;nvim nvim/nvim.nix
-: 1695249997:0;home-switch
-: 1695250009:0;nvim
-: 1695250024:0;nvim nvim/plugins/nvim-tree.lua
-: 1695250057:0;home-switch
-: 1695250225:0;nvim
-: 1695326404:0;ls
-: 1695326407:0;vi .
-: 1695326518:0;home-switch
-: 1695326533:0;nvim
-: 1695326539:0;nvim .
-: 1695330350:0;ls
-: 1695330356:0;cd ../../../
-: 1695662566:0;nvim nvim/nvim.nix
-: 1695662649:0;home-switch
-: 1695662871:0;nvim
-: 1695662874:0;home-switch
-: 1695662928:0;nvim nvim/plugins/telescope.lua
-: 1695663076:0;home-switch
-: 1695663087:0;nvim
-: 1695663098:0;nvim nvim/options.lua
-: 1695663116:0;nvim nvim/nvim.nix
-: 1695663130:0;nvim .
-: 1695663136:0;nvim
-: 1695663145:0;nvim nvim/nvim.nix
-: 1695663174:0;home-switch
-: 1695663191:0;nvim .
-: 1695663209:0;cd nvim
-: 1706782673:0;vim .
-: 1706782710:0;home-switch
-: 1706782825:0;vim .
-: 1706782833:0;cd ../../
+nvim nvim/plugins/nvim-tree.lua
+git add .
+nvim nvim/nvim.nix
+home-switch
+nvim
+nvim nvim/plugins/nvim-tree.lua
+home-switch
+nvim
+ls
+vi .
+home-switch
+nvim
+nvim .
+ls
+cd ../../../
+nvim nvim/nvim.nix
+home-switch
+nvim
+home-switch
+nvim nvim/plugins/telescope.lua
+home-switch
+nvim
+nvim nvim/options.lua
+nvim nvim/nvim.nix
+nvim .
+nvim
+nvim nvim/nvim.nix
+home-switch
+nvim .
+cd nvim
+vim .
+home-switch
+vim .
+cd ../../
+vim .
+home-switch
+vim vscodium.nix
+home-switch
+exit
+exit

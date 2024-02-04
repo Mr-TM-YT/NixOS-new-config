@@ -1,13 +1,14 @@
 { ... }: {
   imports = [
-    ./firefox.nix
-    ./git.nix
-    ./vscodium.nix
+    ./eww
+    ./hyprland
     ./waybar
     ./wezterm
-    ./helix.nix
-    ./hyprland
     ./nvim
+    ./vscode.nix
+    ./firefox.nix
+    ./git.nix
+    ./helix.nix
     ./zsh.nix
   ];
 }

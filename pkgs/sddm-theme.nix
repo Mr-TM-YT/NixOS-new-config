@@ -1,7 +1,7 @@
 { pkgs, ... }:
 
 pkgs.stdenv.mkDerivation {
-  name = "sddm-theme";
+  name = "tokyo-night-sddm";
   src = pkgs.fetchFromGitHub {
     owner = "rototrash";
     repo = "tokyo-night-sddm";
@@ -10,7 +10,7 @@ pkgs.stdenv.mkDerivation {
   };
 
   installPhase = ''
-    	  mkdir -p $out
-    	  cp -R ./* $out/
-    	'';
+    mkdir -p $out/share/sddm/themes
+    cp -aR $src $out/share/sddm/themes/tokyo-night-sddm
+   	'';
 }

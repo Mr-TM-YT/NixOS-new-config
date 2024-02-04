@@ -60,18 +60,18 @@
   # Set your time zone.
   time.timeZone = "Africa/Cairo";
   # Select internationalisation properties.
-  i18n.defaultLocale = "en_US.UTF-8";
-  i18n.extraLocaleSettings = {
-    LC_ADDRESS = "ar_EG.utf8";
-    LC_IDENTIFICATION = "ar_EG.utf8";
-    LC_MEASUREMENT = "ar_EG.utf8";
-    LC_MONETARY = "ar_EG.utf8";
-    LC_NAME = "ar_EG.utf8";
-    LC_NUMERIC = "ar_EG.utf8";
-    LC_PAPER = "ar_EG.utf8";
-    LC_TELEPHONE = "ar_EG.utf8";
-    LC_TIME = "ar_EG.utf8";
-  };
+  # i18n.defaultLocale = "en_US.UTF-8";
+  # i18n.extraLocaleSettings = {
+  #   LC_ADDRESS = "ar_EG.utf8";
+  #   LC_IDENTIFICATION = "ar_EG.utf8";
+  #   LC_MEASUREMENT = "ar_EG.utf8";
+  #   LC_MONETARY = "ar_EG.utf8";
+  #   LC_NAME = "ar_EG.utf8";
+  #   LC_NUMERIC = "ar_EG.utf8";
+  #   LC_PAPER = "ar_EG.utf8";
+  #   LC_TELEPHONE = "ar_EG.utf8";
+  #   LC_TIME = "ar_EG.utf8";
+  # };
 
 
   # Used for sound to work
@@ -93,7 +93,7 @@
     desktopManager.xterm.enable = false;
     displayManager.sddm = {
       enable = true;
-      # theme = pkgs.sddm-theme;
+      theme = "tokyo-night-sddm";
       settings.Theme.CursorTheme = "Bibata-Modern-Classic";
     };
   };
@@ -161,21 +161,21 @@
   };
 
   security.polkit.extraConfig = ''
-  polkit.addRule(function(action, subject) {
-    if (
-      subject.isInGroup("users")
-      && (
-        action.id == "org.freedesktop.login1.reboot" ||
-        action.id == "org.freedesktop.login1.reboot-multiple-sessions" ||
-        action.id == "org.freedesktop.login1.power-off" ||
-        action.id == "org.freedesktop.login1.power-off-multiple-sessions"
-        )
-        )
-        {
-          return polkit.Result.YES;
-        }
-      })
-      '';
+    polkit.addRule(function(action, subject) {
+      if (
+        subject.isInGroup("users")
+        && (
+          action.id == "org.freedesktop.login1.reboot" ||
+          action.id == "org.freedesktop.login1.reboot-multiple-sessions" ||
+          action.id == "org.freedesktop.login1.power-off" ||
+          action.id == "org.freedesktop.login1.power-off-multiple-sessions"
+          )
+          )
+          {
+            return polkit.Result.YES;
+          }
+        })
+  '';
   # https://nixos.wiki/wiki/FAQ/When_do_I_update_stateVersion
   system.stateVersion = "23.11";
 }
